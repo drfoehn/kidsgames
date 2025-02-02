@@ -1,0 +1,100 @@
+2024-12-25 17:53:34,930 ERROR: Exception on /download_template [GET] [in C:\Users\janne\OneDrive\Dokumente\CodingProjects\researchapps\env\Lib\site-packages\flask\app.py:838]
+Traceback (most recent call last):
+  File "C:\Users\janne\OneDrive\Dokumente\CodingProjects\researchapps\env\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\janne\OneDrive\Dokumente\CodingProjects\researchapps\env\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\janne\OneDrive\Dokumente\CodingProjects\researchapps\env\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\janne\OneDrive\Dokumente\CodingProjects\researchapps\env\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\janne\OneDrive\Dokumente\CodingProjects\researchapps\app.py", line 57, in download_template
+    return send_file(file_path, as_attachment=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\janne\OneDrive\Dokumente\CodingProjects\researchapps\env\Lib\site-packages\flask\helpers.py", line 499, in send_file
+    return werkzeug.utils.send_file(  # type: ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\janne\OneDrive\Dokumente\CodingProjects\researchapps\env\Lib\site-packages\werkzeug\utils.py", line 480, in send_file
+    file = open(path, "rb")  # type: ignore
+           ^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: 'C:\\Users\\janne\\OneDrive\\Dokumente\\CodingProjects\\researchapps\\static/xls2json_uploads/template.xlsx'
+2024-12-25 17:53:34,935 ERROR: Server Error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application. [in C:\Users\janne\OneDrive\Dokumente\CodingProjects\researchapps\app.py:44]
+2024-12-25 17:55:50,513 ERROR: Exception on /download_template [GET] [in C:\Users\janne\OneDrive\Dokumente\CodingProjects\researchapps\env\Lib\site-packages\flask\app.py:838]
+Traceback (most recent call last):
+  File "C:\Users\janne\OneDrive\Dokumente\CodingProjects\researchapps\env\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\janne\OneDrive\Dokumente\CodingProjects\researchapps\env\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\janne\OneDrive\Dokumente\CodingProjects\researchapps\env\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\janne\OneDrive\Dokumente\CodingProjects\researchapps\env\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\janne\OneDrive\Dokumente\CodingProjects\researchapps\app.py", line 57, in download_template
+    return send_file(file_path, as_attachment=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\janne\OneDrive\Dokumente\CodingProjects\researchapps\env\Lib\site-packages\flask\helpers.py", line 499, in send_file
+    return werkzeug.utils.send_file(  # type: ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\janne\OneDrive\Dokumente\CodingProjects\researchapps\env\Lib\site-packages\werkzeug\utils.py", line 480, in send_file
+    file = open(path, "rb")  # type: ignore
+           ^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: 'C:\\Users\\janne\\OneDrive\\Dokumente\\CodingProjects\\researchapps\\static/xls2json_uploads/template.xlsx'
+2024-12-25 17:55:50,517 ERROR: Server Error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application. [in C:\Users\janne\OneDrive\Dokumente\CodingProjects\researchapps\app.py:44]
+2024-12-25 17:56:00,393 ERROR: Exception on /download_template [GET] [in C:\Users\janne\OneDrive\Dokumente\CodingProjects\researchapps\env\Lib\site-packages\flask\app.py:838]
+Traceback (most recent call last):
+  File "C:\Users\janne\OneDrive\Dokumente\CodingProjects\researchapps\env\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\janne\OneDrive\Dokumente\CodingProjects\researchapps\env\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\janne\OneDrive\Dokumente\CodingProjects\researchapps\env\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\janne\OneDrive\Dokumente\CodingProjects\researchapps\env\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\janne\OneDrive\Dokumente\CodingProjects\researchapps\app.py", line 57, in download_template
+    return send_file(file_path, as_attachment=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\janne\OneDrive\Dokumente\CodingProjects\researchapps\env\Lib\site-packages\flask\helpers.py", line 499, in send_file
+    return werkzeug.utils.send_file(  # type: ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\janne\OneDrive\Dokumente\CodingProjects\researchapps\env\Lib\site-packages\werkzeug\utils.py", line 480, in send_file
+    file = open(path, "rb")  # type: ignore
+           ^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: 'C:\\Users\\janne\\OneDrive\\Dokumente\\CodingProjects\\researchapps\\static/xls2json_uploads/template.xlsx'
+2024-12-25 17:56:00,396 ERROR: Server Error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application. [in C:\Users\janne\OneDrive\Dokumente\CodingProjects\researchapps\app.py:44]
+2024-12-25 17:56:39,568 ERROR: Exception on /download_template [GET] [in C:\Users\janne\OneDrive\Dokumente\CodingProjects\researchapps\env\Lib\site-packages\flask\app.py:838]
+Traceback (most recent call last):
+  File "C:\Users\janne\OneDrive\Dokumente\CodingProjects\researchapps\env\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\janne\OneDrive\Dokumente\CodingProjects\researchapps\env\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\janne\OneDrive\Dokumente\CodingProjects\researchapps\env\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\janne\OneDrive\Dokumente\CodingProjects\researchapps\env\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\janne\OneDrive\Dokumente\CodingProjects\researchapps\app.py", line 57, in download_template
+    return send_file(file_path, as_attachment=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\janne\OneDrive\Dokumente\CodingProjects\researchapps\env\Lib\site-packages\flask\helpers.py", line 499, in send_file
+    return werkzeug.utils.send_file(  # type: ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\janne\OneDrive\Dokumente\CodingProjects\researchapps\env\Lib\site-packages\werkzeug\utils.py", line 480, in send_file
+    file = open(path, "rb")  # type: ignore
+           ^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: 'C:\\Users\\janne\\OneDrive\\Dokumente\\CodingProjects\\researchapps\\static/xls2json_uploads/template.xlsx'
+2024-12-25 17:56:39,573 ERROR: Server Error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application. [in C:\Users\janne\OneDrive\Dokumente\CodingProjects\researchapps\app.py:44]

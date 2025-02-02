@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}Willkommen zum Gefangenendilemma{% endblock %}
+
+{% block header %}
+<h1 class="text-center">Willkommen zum Gefangenendilemma!</h1>
+{% endblock %}
+
+{% block content %}
+<div class="text-center">
+    <form action="{{ url_for('prisoners_dilemma.create_room') }}" method="post" class="mb-4">
+        <button type="submit" class="btn btn-primary">Raum erstellen</button>
+    </form>
+    <form action="{{ url_for('prisoners_dilemma.join_room') }}" method="post" class="mb-4">
+        <input type="text" name="room_code" placeholder="Raumcode eingeben" required class="form-control" style="width: 300px; margin: auto;">
+        <button type="submit" class="btn btn-success mt-2">Raum beitreten</button>
+    </form>
+</div>
+{% endblock %}
+

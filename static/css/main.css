@@ -1,0 +1,152 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+
+
+.navbar{
+    /*text-align: center;*/
+    margin-bottom: 2em;
+}
+
+/*a#selectnoun,*/
+/*a#selectverb,*/
+/*a#selectallwords*/
+#selectnoun{
+    background-color: #22a7ff;
+}
+
+#selectverb{
+    background-color: #f80002;
+}
+
+#selectallwords{
+    background-color: #d89e00;
+}
+
+.btn:active,
+.btn:focus{
+    /*background-color: #FB8500;*/
+    /*border: 5px dashed #5cfb00;*/
+    box-shadow: 1px 1px 2px black, 0 0 25px gray, 0 0 5px darkgray;
+}
+
+#select_type{
+    margin-bottom: 20px;
+}
+
+
+
+#random_word{
+    font-size: xxx-large;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#timer{
+    font-size: 5em;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.word_container {
+    margin-bottom: 1em;
+}
+
+#resume,
+#pause,
+#reset,
+#dice{
+    display: none;
+}
+
+.btn{
+    border: none;
+    border-radius: 0px;
+}
+
+#reset{
+    background-color: #ef476f;
+}
+
+
+#start{
+    background-color: #06d6a0;
+}
+
+#new_word,
+#pause,
+#resume{
+    background-color: #118ab2;
+}
+
+/*___________________________________DICE________________________________________*/
+
+/*!*general stying for page*/
+* { box-sizing: border-box; }
+
+
+
+/*//styling for Scene*/
+.scene {
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+  perspective:600px;
+}
+
+/*.rollBtn{*/
+/*  background:#118ab2;*/
+/*  color:white;*/
+/*  border:none;*/
+/*  margin:auto 0;*/
+/*  !*font-size:1em;*!*/
+/*  margin-top:1em;*/
+/*  width:200px;*/
+/*}*/
+
+/*//styling for 3D Cube*/
+.cube {
+  width:200px;
+  height: 200px;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: translateZ(-100px);
+  transition: transform 1s;
+}
+
+/*//styling for 3D Cube transforms / animations on face select (on roll)*/
+.cube.show-1  { transform: translateZ(-100px) rotateY(   0deg); }
+.cube.show-2  { transform: translateZ(-100px) rotateY(-180deg); }
+.cube.show-3  { transform: translateZ(-100px) rotateY( -90deg); }
+.cube.show-4   { transform: translateZ(-100px) rotateY(  90deg); }
+.cube.show-5   { transform: translateZ(-100px) rotateX( -90deg); }
+.cube.show-6 { transform: translateZ(-100px) rotateX(  90deg); }
+
+/*//universal style for cube faces*/
+.cube__face {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border: 4px solid white;
+  line-height: 200px;
+  font-size: 5em;
+  font-weight: bold;
+  font-family: 'Ubuntu', sans-serif;
+  color: white;
+  text-align: center;
+}
+
+/*//individual styling for each numbers face*/
+.cube__face--1  { background: #118ab2;  opacity: 0.75;}
+.cube__face--3  { background: #118ab2;   opacity: 0.75; }
+.cube__face--2  {  background: #118ab2;   opacity: 0.75; }
+.cube__face--4  {  background: #118ab2;   opacity: 0.75; }
+.cube__face--5   {  background: #118ab2;   opacity: 0.75; }
+.cube__face--6 {  background: #118ab2;  opacity: 0.75; }
+
+.cube__face--1  { transform: rotateY(  0deg) translateZ(100px); }
+.cube__face--2   { transform: rotateY(180deg) translateZ(100px); }
+.cube__face--3  { transform: rotateY( 90deg) translateZ(100px); }
+.cube__face--4   { transform: rotateY(-90deg) translateZ(100px); }
+.cube__face--5   { transform: rotateX( 90deg) translateZ(100px); }
+.cube__face--6 { transform: rotateX(-90deg) translateZ(100px); }
+
+label { margin-right: 10px; }

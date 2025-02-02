@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block title %}Endergebnis{% endblock %}
+
+{% block header %}
+<h1 class="text-center">Der Hammer fällt</h1>
+{% endblock %}
+
+{% block content %}
+<div class="text-center">
+    <h2>Der Richter entscheidet:</h2>
+    
+    {% if game.scores[0] >= game.max_years or game.scores[1] >= game.max_years %}
+        <div class="alert alert-danger">
+            <h3>Die maximale Strafe von {{ game.max_years }} Jahren wurde überschritten!</h3>
+            <p>Beide Spieler haben verloren.</p>
+        </div>
+    {% endif %}
+    
+    <div class="final-scores bg-light p-4 rounded">
+        {% if game.scores[0] < game.max_years and game.scores[1] < game.max_years %}
+            <h3>{{ winner }} hat gewonnen!</h3>
+        {% endif %}
+        <p>{{ game.roles[0] }}: {{ game.scores[0] }} Jahre</p>
+        <p>{{ game.roles[1] }}: {{ game.scores[1] }} Jahre</p>
+    </div>
+    
+    <a href="{{ url_for('prisoners_dilemma.index') }}" class="btn btn-primary mt-3">Neues Spiel</a>
+</div>
+{% endblock %}
+

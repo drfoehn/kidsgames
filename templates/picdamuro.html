@@ -1,0 +1,188 @@
+{% extends "base.html" %}
+
+{% block title %}PICDAMURO{% endblock %}
+
+{% block content %}
+<nav class="navbar navbar-light bg-light">
+    <div class="container-fluid">
+      <span class="display-1">PICDAMURO</span>
+        <img src="logo.jpg" alt="" width="auto" height="50" class="d-inline-block align-text-top">
+  
+    </div>
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#instruction_picdamuro">
+        Spielanleitung
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="instruction_picdamuro" tabindex="-1" aria-labelledby="instruction_picdamuro" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="instruction_picdamuro">Spielanleitung Picdamuro</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <h1>Übersicht</h1>
+                <p>PICDAMURO ist ein interaktives Wortgenerationsspiel, das darauf abzielt, den Wortschatz und die Sprachfähigkeiten zu verbessern. Die Spieler können Wörter basierend auf verschiedenen Kategorien und Schwierigkeitsgraden auswählen, was es für verschiedene Altersgruppen und Lernstufen geeignet macht. Das Spiel integriert ein unterhaltsames und wettbewerbsfähiges Element, bei dem die Spieler Wörter zeichnen und gegeneinander antreten können.</p>
+
+                <h2>Funktionen</h2>
+                <ul>
+                    <li><strong>Wortkategorien:</strong> Wählen Sie aus verschiedenen Kategorien wie Nomen, Verben und mehr.</li>
+                    <li><strong>Schwierigkeitsgrade:</strong> Wählen Sie den Schwierigkeitsgrad der Wörter, um dem Fähigkeitsniveau des Spielers gerecht zu werden.</li>
+                    <li><strong>Countdown-Timer:</strong> Nehmen Sie an zeitlich begrenzten Herausforderungen teil, um schnelles Denken und Erinnern zu fördern.</li>
+                    <li><strong>Benutzerfreundliche Oberfläche:</strong> Einfaches und intuitives Design für eine einfache Navigation.</li>
+                    <li><strong>Mehrspielermodus:</strong> Treten Sie gegen andere Spieler auf unterhaltsame und ansprechende Weise an.</li>
+                </ul>
+
+                <h2>Spielregeln</h2>
+
+                <h3>Ziel</h3>
+                <p>Das Ziel des Spiels ist es, Wörter korrekt zu identifizieren und zu zeichnen, basierend auf der Kategorie und den Regeln, die mit der Farbe des Feldes verbunden sind, auf dem Sie sich befinden.</p>
+
+                <h3>Spielanleitung</h3>
+                <p><strong>Herunterladbares Spielbrett:</strong> Ein Spielbrett (Spielplan) kannst du <a href="{{ url_for('download_file', filename='Spielplan_Picdamuro.pdf') }}" target="_blank">hier herunterladen</a>.</p>
+
+                <h4>Spielstart:</h4>
+                <ul>
+                    <li>Gespielt in Gruppen mit mindestens 2 Spielern pro Gruppe.</li>
+                    <li>Innerhalb der Gruppe wechseln sich die Spieler ab – einer zeichnet, während die anderen raten.</li>
+                    <li>Öffnen Sie die Picdamuro-Mobile-App lokal, indem Sie die index.html öffnen, oder stellen Sie sie auf Ihren Server und starten Sie sie von dort.</li>
+                    <li>Wählen Sie einen Worttyp.</li>
+                </ul>
+
+                <h4>Feldfarben und Aktionen:</h4>
+
+                <ul>
+                    <li><strong>Rotes Feld:</strong>
+                        <ul>
+                            <li>Wenn Sie auf einem roten Feld landen, muss ein Verb gewählt werden.</li>
+                            <li>(Kinder können auch ein Substantiv wählen, wenn sie auf einem blauen Feld landen.)</li>
+                            <li>Klicken Sie auf "Neuer Begriff".</li>
+                            <li>Wenn der Begriff unbekannt ist, können Sie einen neuen Begriff wählen.</li>
+                        </ul>
+                    </li>
+
+                    <li><strong>Blaues Feld:</strong>
+                        <ul>
+                            <li>Wenn Sie auf einem blauen Feld landen, muss ein Substantiv gewählt werden.</li>
+                            <li>Klicken Sie auf "Neuer Begriff".</li>
+                            <li>Wenn der Begriff unbekannt ist, können Sie einen neuen Begriff wählen.</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h4>Zeichenphase:</h4>
+                <ul>
+                    <li>Jetzt ist es Zeit zu zeichnen!</li>
+                    <li>Die anderen in der Gruppe dürfen den Begriff nicht sehen.</li>
+                    <li>Sind Sie bereit? Dann drücken Sie "Start" und legen Sie das Telefon mit der Bildschirmseite nach oben.</li>
+                    <li>Sie haben eine Minute.</li>
+                    <li>Der Countdown beginnt, sobald Sie auf Start drücken. Sie haben 1 Minute Zeit zum Zeichnen.</li>
+                    <li>Die Kategorie des ausgewählten Wortes wird während der Zeichenphase angezeigt.</li>
+                    <li>Es dürfen keine Zahlen oder Buchstaben gezeichnet werden.</li>
+                    <li>Sie dürfen nicht sprechen oder durch Pantomime Hinweise geben.</li>
+                    <li>Wenn Sie den Begriff erraten, bevor die Minute um ist, drücken Sie "Fertig".</li>
+                </ul>
+
+                <h4>Würfeln:</h4>
+                <ul>
+                    <li>Ein Würfel erscheint mit einem maximalen Wert von 4.</li>
+                    <li>Drücken Sie den Würfel und ziehen Sie vorwärts.</li>
+                    <li>Egal, ob Sie den Begriff erraten haben oder nicht, es ist jetzt die nächste Gruppe an der Reihe.</li>
+                </ul>
+
+                <h4>Gelbes Feld:</h4>
+                <ul>
+                    <li>Wenn Sie auf einem gelben Feld landen, zeichnen alle Gruppen gleichzeitig.</li>
+                    <li>Die erste Gruppe, die den Begriff errät, darf würfeln und weitermachen.</li>
+                    <li>Gelbe Felder sind nur einmal gültig für das gleichzeitige Zeichnen. Wenn Sie beim zweiten Mal immer noch auf demselben gelben Feld sind (d.h. Sie sich nicht bewegt haben), wählen Sie gelb (Egal), wenn Sie ein Wort wählen, aber nur Ihre Gruppe darf zeichnen.</li>
+                </ul>
+
+                <h4>Endfeld:</h4>
+                <ul>
+                    <li>Das letzte Feld ist ebenfalls gelb, aber die Regeln ändern sich.</li>
+                    <li>Sie müssen jedes Mal gegen alle anderen Gruppen spielen, bis Sie gewinnen.</li>
+                    <li>Das bedeutet, dass Sie jedes Mal, wenn Sie auf diesem Feld landen, mit allen anderen Spielern um das richtige Wort konkurrieren müssen.</li>
+                    <li>Wer diese letzte Hürde meistert, gewinnt!</li>
+                   
+                </ul>
+                <h3>Viel Spaß!</h3>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Schließen</button>
+              <a href="{{ url_for('picdamuro') }}" class="btn btn-primary">Zum Spiel</a>
+            </div>
+          </div>
+        </div>
+      </div>
+  </nav>
+  
+      <div class="container">
+          <div class="row text-center" id="select_type">
+              <div class="col">
+                  <button type="button"  class="btn btn-primary btn-lg select" id="selectnoun">Subjekt</button>
+              </div>
+              <div class="col">
+                  <button type="button"  class="btn btn-primary btn-lg select" id="selectverb">Verb</button>
+              </div>
+              <div class="col">
+                  <button type="button"  class="btn btn-primary btn-lg select" id="selectallwords">Egal</button>
+              </div>
+          </div>
+    <div class="row new">
+      <div class="col text-center">
+        <button type="button"  class="btn btn-primary btn-lg select" id="new_word">Neuer Begriff</button>
+        <button type="button"  class="btn btn-primary btn-lg" id="reset">Fertig</button>
+      </div>
+    </div>
+        <div class="row word_container">
+          <div class="col text-center ">
+            <span id="random_word"></span>
+          </div>
+        </div>
+  </div>
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <button type="button" class="btn btn-secondary btn-lg" id="start">Start</button>
+            <button type="button" class="btn btn-secondary btn-lg" id="pause">Pause</button>
+            <button type="button" class="btn btn-secondary btn-lg" id="resume">Weiter</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col text-center">
+            <span id="timer">60</span>
+          </div>
+          </div>
+        </div>
+      </div>
+  
+    <div class="row">
+      <div class="col-2">
+  
+      </div>
+      <div class="col-8 text-center">
+        <div class="rollBtn" id="rolldice">
+  <div class = "scene" id="dice">
+     <div class="cube">
+      <div class="cube__face cube__face--1">1</div>
+      <div class="cube__face cube__face--2">2</div>
+      <div class="cube__face cube__face--3">4</div>
+      <div class="cube__face cube__face--4">4</div>
+      <div class="cube__face cube__face--5">3</div>
+      <div class="cube__face cube__face--6">1</div>
+    </div>
+    </div>
+        <div class="col-2">
+  
+      </div>
+  
+  
+        </div>
+    </div>
+  </div>
+      <script src="word_generator.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+{% endblock %}

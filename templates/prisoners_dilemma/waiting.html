@@ -1,0 +1,123 @@
+{% extends "base.html" %}
+
+{% block title %}Warte auf den anderen Verdächtigen{% endblock %}
+
+{% block header %}
+<h1 class="text-center">Warte auf den anderen Verdächtigen</h1>
+{% endblock %}
+
+{% block content %}
+<div class="text-center">
+    <p>Hey, {{ player_role }}!</p>
+    <p id="waiting-message">Du hast dich entschieden. Jetzt warten wir nur noch auf die Entscheidung des/der Anderen.</p>
+    <div id="result" style="display: none;">
+        <div class="bg-light p-3 rounded">
+            <p id="your-choice-text" class="bg-light p-3 rounded"></p>
+            <p id="other-choice-text" class="bg-light p-3 rounded"></p>
+
+            <p class="bg-dark p-3 rounded text-white">Du bekommst diesmal <span id="your-round-score"></span> Jahr(e) aufgebrummt.</p>
+            <p class="bg-dark p-3 rounded text-white">Dein Kollege bekommt diesmal <span id="other-round-score"></span> Jahr(e) aufgebrummt.</p>
+            
+            <p class="bg-info p-3 rounded text-white">Du hast inzwischen bereits <span id="your-total-score"></span> Jahr(e) aufgebrummt bekommen.</p>
+            <p class="bg-info p-3 rounded text-white">Dein Kollege hat inzwischen bereits  <span id="other-total-score"></span> Jahr(e) aufgebrummt bekommen.</p>
+        </div>
+        <a href="{{ url_for('prisoners_dilemma.play', room_code=room_code) }}" class="btn btn-primary" id="next-round">Nächste Runde</a>
+    </div>
+    <!-- Add debug info
+    <div id="debug-info" class="mt-4" style="font-size: 0.8em; color: #666;">
+        <p>Room Code: {{ room_code }}</p>
+        <p>Player Role: {{ player_role }}</p>
+        <p>Game State: <span id="game-state">Checking...</span></p>
+        <p>Last Update: <span id="last-update">Never</span></p>
+        <p>AJAX URL: <span id="ajax-url">{{ url_for('prisoners_dilemma.round_result', room_code=room_code) }}</span></p>
+    </div>  -->
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+    console.log("Script block starting...");
+    
+    // Test jQuery
+    if (typeof jQuery == 'undefined') {
+        console.error("jQuery is not loaded!");
+        document.getElementById('game-state').textContent = "Error: jQuery not loaded";
+    } else {
+        console.log("jQuery is loaded, version:", jQuery.fn.jquery);
+    }
+
+    function getChoiceText(choice, isYourChoice) {
+        if (choice === "betray") {
+            return isYourChoice 
+                ? "Du hast dich entschlossen, deinen Freund zu verpfeifen. Du Snitch!" 
+                : "Dein Freund hat dich verpfiffen. Was für ein Verräter!";
+        } else {
+            return isYourChoice
+                ? "Du bist loyal geblieben. Ehrenmann!" 
+                : "Dein Freund ist dir treu geblieben. Was für ein Ehrenmann!";
+        }
+    }
+
+    function updateDebugInfo(result) {
+        $('#game-state').html(
+            `Round Complete: ${result.round_complete}<br>` +
+            `Your Choice: ${result.your_choice}<br>` +
+            `Other Choice: ${result.other_choice}<br>` +
+            `Current Round: ${result.current_round}/${result.total_rounds}`
+        );
+        $('#last-update').text(new Date().toLocaleTimeString());
+    }
+
+    function checkRoundComplete() {
+        const url = "{{ url_for('prisoners_dilemma.round_result', room_code=room_code) }}";
+        console.log("Making AJAX request to:", url);
+        
+        $.getJSON(url)
+            .done(function(result) {
+                console.log("Received result:", result);
+                updateDebugInfo(result);
+                
+                if (result.round_complete) {
+                    console.log("Round is complete, updating display");
+                    $('#your-choice').text(result.your_choice);
+                    $('#other-choice').text(result.other_choice);
+                    $('#your-round-score').text(result.your_round_score);
+                    $('#other-round-score').text(result.other_round_score);
+                    $('#your-total-score').text(result.your_total_score);
+                    $('#other-total-score').text(result.other_total_score);
+                    $('#your-choice-text').text(getChoiceText(result.your_choice, true));
+                    $('#other-choice-text').text(getChoiceText(result.other_choice, false));
+                    $('#waiting-message').hide();
+                    $('#result').show();
+                } else {
+                    console.log("Round not complete, checking again in 1 second");
+                    setTimeout(checkRoundComplete, 1000);
+                }
+            })
+            .fail(function(jqXHR, textStatus, errorThrown) {
+                console.error("AJAX error:", textStatus, errorThrown);
+                console.error("Response:", jqXHR.responseText);
+                $('#game-state').text(`Error: ${textStatus} - ${errorThrown}`);
+                setTimeout(checkRoundComplete, 1000);
+            });
+    }
+
+    // Start checking when document is ready
+    $(document).ready(function() {
+        console.log("Document ready, starting round check...");
+        checkRoundComplete();
+    });
+
+    // Also add a manual refresh button for testing
+    $('#debug-info').append(
+        $('<button>')
+            .text('Force Refresh')
+            .click(checkRoundComplete)
+            .addClass('btn btn-sm btn-secondary mt-2')
+    );
+</script>
+{% endblock %}
+
+
+
+

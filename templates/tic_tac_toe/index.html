@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block title %}Moving Tic-Tac-Toe{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <h1 class="text-center mb-4">Moving Tic-Tac-Toe</h1>
+            
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">Neues Spiel erstellen</h5>
+                    <form action="{{ url_for('tic_tac_toe.create_room') }}" method="post">
+                        <div class="mb-3">
+                            <label for="player_name" class="form-label">Dein Name</label>
+                            <input type="text" class="form-control" id="player_name" name="player_name" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Spiel erstellen</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Einem Spiel beitreten</h5>
+                    <form action="{{ url_for('tic_tac_toe.join_room') }}" method="post">
+                        <div class="mb-3">
+                            <label for="player_name" class="form-label">Dein Name</label>
+                            <input type="text" class="form-control" id="player_name" name="player_name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="room_code" class="form-label">Raum-Code</label>
+                            <input type="text" class="form-control" id="room_code" name="room_code" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Spiel beitreten</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %} 

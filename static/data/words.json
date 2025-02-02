@@ -1,0 +1,4788 @@
+[
+        {
+          "name": "Ärztin",
+          "type": "Hauptwort",
+          "id": 2
+        },
+        {
+          "name": "Abend",
+          "type": "Hauptwort",
+          "id": 3
+        },
+        {
+          "name": "Abfahrt",
+          "type": "Hauptwort",
+          "id": 4
+        },
+        {
+          "name": "Abflug",
+          "type": "Hauptwort",
+          "id": 5
+        },
+        {
+          "name": "Absender",
+          "type": "Hauptwort",
+          "id": 6
+        },
+        {
+          "name": "Adresse",
+          "type": "Hauptwort",
+          "id": 7
+        },
+        {
+          "name": "Alkohol",
+          "type": "Hauptwort",
+          "id": 8
+        },
+        {
+          "name": "Alter",
+          "type": "Hauptwort",
+          "id": 9
+        },
+        {
+          "name": "Ampel",
+          "type": "Hauptwort",
+          "id": 10
+        },
+        {
+          "name": "Anfang",
+          "type": "Hauptwort",
+          "id": 11
+        },
+        {
+          "name": "Angebot",
+          "type": "Hauptwort",
+          "id": 12
+        },
+        {
+          "name": "Angestellte",
+          "type": "Hauptwort",
+          "id": 13
+        },
+        {
+          "name": "Angst",
+          "type": "Hauptwort",
+          "id": 14
+        },
+        {
+          "name": "Ankunft",
+          "type": "Hauptwort",
+          "id": 15
+        },
+        {
+          "name": "Anmeldung",
+          "type": "Hauptwort",
+          "id": 16
+        },
+        {
+          "name": "Anrede",
+          "type": "Hauptwort",
+          "id": 17
+        },
+        {
+          "name": "Anruf",
+          "type": "Hauptwort",
+          "id": 18
+        },
+        {
+          "name": "Anrufbeantworter",
+          "type": "Hauptwort",
+          "id": 19
+        },
+        {
+          "name": "Ansage",
+          "type": "Hauptwort",
+          "id": 20
+        },
+        {
+          "name": "Anschluss",
+          "type": "Hauptwort",
+          "id": 21
+        },
+        {
+          "name": "Antwort",
+          "type": "Hauptwort",
+          "id": 22
+        },
+        {
+          "name": "Anzeige",
+          "type": "Hauptwort",
+          "id": 23
+        },
+        {
+          "name": "Anzug",
+          "type": "Hauptwort",
+          "id": 24
+        },
+        {
+          "name": "Apfel",
+          "type": "Hauptwort",
+          "id": 25
+        },
+        {
+          "name": "Apotheke",
+          "type": "Hauptwort",
+          "id": 26
+        },
+        {
+          "name": "Appartement",
+          "type": "Hauptwort",
+          "id": 27
+        },
+        {
+          "name": "Appetit",
+          "type": "Hauptwort",
+          "id": 28
+        },
+        {
+          "name": "April",
+          "type": "Hauptwort",
+          "id": 29
+        },
+        {
+          "name": "Arbeit",
+          "type": "Hauptwort",
+          "id": 30
+        },
+        {
+          "name": "Arbeitsplatz",
+          "type": "Hauptwort",
+          "id": 31
+        },
+        {
+          "name": "Arm",
+          "type": "Hauptwort",
+          "id": 32
+        },
+        {
+          "name": "Arzt",
+          "type": "Hauptwort",
+          "id": 33
+        },
+        {
+          "name": "Aufenthalt",
+          "type": "Hauptwort",
+          "id": 34
+        },
+        {
+          "name": "Aufgabe",
+          "type": "Hauptwort",
+          "id": 35
+        },
+        {
+          "name": "Aufzug",
+          "type": "Hauptwort",
+          "id": 36
+        },
+        {
+          "name": "Auge",
+          "type": "Hauptwort",
+          "id": 37
+        },
+        {
+          "name": "August",
+          "type": "Hauptwort",
+          "id": 38
+        },
+        {
+          "name": "Ausbildung",
+          "type": "Hauptwort",
+          "id": 39
+        },
+        {
+          "name": "Ausflug",
+          "type": "Hauptwort",
+          "id": 40
+        },
+        {
+          "name": "Ausgang",
+          "type": "Hauptwort",
+          "id": 41
+        },
+        {
+          "name": "Auskunft",
+          "type": "Hauptwort",
+          "id": 42
+        },
+        {
+          "name": "Ausländer",
+          "type": "Hauptwort",
+          "id": 43
+        },
+        {
+          "name": "Ausländerin",
+          "type": "Hauptwort",
+          "id": 44
+        },
+        {
+          "name": "Ausland",
+          "type": "Hauptwort",
+          "id": 45
+        },
+        {
+          "name": "Aussage",
+          "type": "Hauptwort",
+          "id": 46
+        },
+        {
+          "name": "Ausstellung",
+          "type": "Hauptwort",
+          "id": 47
+        },
+        {
+          "name": "Ausweis",
+          "type": "Hauptwort",
+          "id": 48
+        },
+        {
+          "name": "Auto",
+          "type": "Hauptwort",
+          "id": 49
+        },
+        {
+          "name": "Autobahn",
+          "type": "Hauptwort",
+          "id": 50
+        },
+        {
+          "name": "Automat",
+          "type": "Hauptwort",
+          "id": 51
+        },
+        {
+          "name": "Bäckerei",
+          "type": "Hauptwort",
+          "id": 52
+        },
+        {
+          "name": "Büro",
+          "type": "Hauptwort",
+          "id": 53
+        },
+        {
+          "name": "Baby",
+          "type": "Hauptwort",
+          "id": 54
+        },
+        {
+          "name": "Bad",
+          "type": "Hauptwort",
+          "id": 55
+        },
+        {
+          "name": "Bahn",
+          "type": "Hauptwort",
+          "id": 56
+        },
+        {
+          "name": "Bahnhof",
+          "type": "Hauptwort",
+          "id": 57
+        },
+        {
+          "name": "Bahnsteig",
+          "type": "Hauptwort",
+          "id": 58
+        },
+        {
+          "name": "Balkon",
+          "type": "Hauptwort",
+          "id": 59
+        },
+        {
+          "name": "Banane",
+          "type": "Hauptwort",
+          "id": 60
+        },
+        {
+          "name": "Bank",
+          "type": "Hauptwort",
+          "id": 61
+        },
+        {
+          "name": "Batterie",
+          "type": "Hauptwort",
+          "id": 62
+        },
+        {
+          "name": "Baum",
+          "type": "Hauptwort",
+          "id": 63
+        },
+        {
+          "name": "Beamte",
+          "type": "Hauptwort",
+          "id": 64
+        },
+        {
+          "name": "Beamtin",
+          "type": "Hauptwort",
+          "id": 65
+        },
+        {
+          "name": "Bein",
+          "type": "Hauptwort",
+          "id": 66
+        },
+        {
+          "name": "Beispiel",
+          "type": "Hauptwort",
+          "id": 67
+        },
+        {
+          "name": "Bekannte",
+          "type": "Hauptwort",
+          "id": 68
+        },
+        {
+          "name": "Benzin",
+          "type": "Hauptwort",
+          "id": 69
+        },
+        {
+          "name": "Beratung",
+          "type": "Hauptwort",
+          "id": 70
+        },
+        {
+          "name": "Berg",
+          "type": "Hauptwort",
+          "id": 71
+        },
+        {
+          "name": "Beruf",
+          "type": "Hauptwort",
+          "id": 72
+        },
+        {
+          "name": "Berufsschule",
+          "type": "Hauptwort",
+          "id": 73
+        },
+        {
+          "name": "Besuch",
+          "type": "Hauptwort",
+          "id": 74
+        },
+        {
+          "name": "Betrag",
+          "type": "Hauptwort",
+          "id": 75
+        },
+        {
+          "name": "Bett",
+          "type": "Hauptwort",
+          "id": 76
+        },
+        {
+          "name": "Bewerbung",
+          "type": "Hauptwort",
+          "id": 77
+        },
+        {
+          "name": "Bier",
+          "type": "Hauptwort",
+          "id": 78
+        },
+        {
+          "name": "Bild",
+          "type": "Hauptwort",
+          "id": 79
+        },
+        {
+          "name": "Bildschirm",
+          "type": "Hauptwort",
+          "id": 80
+        },
+        {
+          "name": "Birne",
+          "type": "Hauptwort",
+          "id": 81
+        },
+        {
+          "name": "Bitte",
+          "type": "Hauptwort",
+          "id": 82
+        },
+        {
+          "name": "Blatt",
+          "type": "Hauptwort",
+          "id": 83
+        },
+        {
+          "name": "Bleistift",
+          "type": "Hauptwort",
+          "id": 84
+        },
+        {
+          "name": "Blick",
+          "type": "Hauptwort",
+          "id": 85
+        },
+        {
+          "name": "Blume",
+          "type": "Hauptwort",
+          "id": 86
+        },
+        {
+          "name": "Bluse",
+          "type": "Hauptwort",
+          "id": 87
+        },
+        {
+          "name": "Blut",
+          "type": "Hauptwort",
+          "id": 88
+        },
+        {
+          "name": "Bogen",
+          "type": "Hauptwort",
+          "id": 89
+        },
+        {
+          "name": "Bohne",
+          "type": "Hauptwort",
+          "id": 90
+        },
+        {
+          "name": "Brötchen",
+          "type": "Hauptwort",
+          "id": 91
+        },
+        {
+          "name": "Brücke",
+          "type": "Hauptwort",
+          "id": 92
+        },
+        {
+          "name": "Brief",
+          "type": "Hauptwort",
+          "id": 93
+        },
+        {
+          "name": "Briefkasten",
+          "type": "Hauptwort",
+          "id": 94
+        },
+        {
+          "name": "Briefmarke",
+          "type": "Hauptwort",
+          "id": 95
+        },
+        {
+          "name": "Brieftasche",
+          "type": "Hauptwort",
+          "id": 96
+        },
+        {
+          "name": "Briefumschlag",
+          "type": "Hauptwort",
+          "id": 97
+        },
+        {
+          "name": "Brille",
+          "type": "Hauptwort",
+          "id": 98
+        },
+        {
+          "name": "Brot",
+          "type": "Hauptwort",
+          "id": 99
+        },
+        {
+          "name": "Bruder",
+          "type": "Hauptwort",
+          "id": 100
+        },
+        {
+          "name": "Buch",
+          "type": "Hauptwort",
+          "id": 101
+        },
+        {
+          "name": "Buchstabe",
+          "type": "Hauptwort",
+          "id": 102
+        },
+        {
+          "name": "Bus",
+          "type": "Hauptwort",
+          "id": 103
+        },
+        {
+          "name": "Butter",
+          "type": "Hauptwort",
+          "id": 104
+        },
+        {
+          "name": "Café",
+          "type": "Hauptwort",
+          "id": 105
+        },
+        {
+          "name": "CD",
+          "type": "Hauptwort",
+          "id": 106
+        },
+        {
+          "name": "CD-ROM",
+          "type": "Hauptwort",
+          "id": 107
+        },
+        {
+          "name": "Chef",
+          "type": "Hauptwort",
+          "id": 108
+        },
+        {
+          "name": "Computer",
+          "type": "Hauptwort",
+          "id": 109
+        },
+        {
+          "name": "Creme",
+          "type": "Hauptwort",
+          "id": 110
+        },
+        {
+          "name": "Dach",
+          "type": "Hauptwort",
+          "id": 111
+        },
+        {
+          "name": "Dame",
+          "type": "Hauptwort",
+          "id": 112
+        },
+        {
+          "name": "Dank",
+          "type": "Hauptwort",
+          "id": 113
+        },
+        {
+          "name": "Datum",
+          "type": "Hauptwort",
+          "id": 114
+        },
+        {
+          "name": "Dauer",
+          "type": "Hauptwort",
+          "id": 115
+        },
+        {
+          "name": "Deutsche",
+          "type": "Hauptwort",
+          "id": 116
+        },
+        {
+          "name": "Dezember",
+          "type": "Hauptwort",
+          "id": 117
+        },
+        {
+          "name": "Dienstag",
+          "type": "Hauptwort",
+          "id": 118
+        },
+        {
+          "name": "Ding",
+          "type": "Hauptwort",
+          "id": 119
+        },
+        {
+          "name": "Disco",
+          "type": "Hauptwort",
+          "id": 120
+        },
+        {
+          "name": "Doktor",
+          "type": "Hauptwort",
+          "id": 121
+        },
+        {
+          "name": "Dom",
+          "type": "Hauptwort",
+          "id": 122
+        },
+        {
+          "name": "Donnerstag",
+          "type": "Hauptwort",
+          "id": 123
+        },
+        {
+          "name": "Doppelzimmer",
+          "type": "Hauptwort",
+          "id": 124
+        },
+        {
+          "name": "Dorf",
+          "type": "Hauptwort",
+          "id": 125
+        },
+        {
+          "name": "Drucker",
+          "type": "Hauptwort",
+          "id": 126
+        },
+        {
+          "name": "Durchsage",
+          "type": "Hauptwort",
+          "id": 127
+        },
+        {
+          "name": "Durst",
+          "type": "Hauptwort",
+          "id": 128
+        },
+        {
+          "name": "Dusche",
+          "type": "Hauptwort",
+          "id": 129
+        },
+        {
+          "name": "E-Mail",
+          "type": "Hauptwort",
+          "id": 130
+        },
+        {
+          "name": "Ecke",
+          "type": "Hauptwort",
+          "id": 131
+        },
+        {
+          "name": "Ehefrau",
+          "type": "Hauptwort",
+          "id": 132
+        },
+        {
+          "name": "Ehemann",
+          "type": "Hauptwort",
+          "id": 133
+        },
+        {
+          "name": "Ei",
+          "type": "Hauptwort",
+          "id": 134
+        },
+        {
+          "name": "Einführung",
+          "type": "Hauptwort",
+          "id": 135
+        },
+        {
+          "name": "Eingang",
+          "type": "Hauptwort",
+          "id": 136
+        },
+        {
+          "name": "Einladung",
+          "type": "Hauptwort",
+          "id": 137
+        },
+        {
+          "name": "Eintritt",
+          "type": "Hauptwort",
+          "id": 138
+        },
+        {
+          "name": "Einwohner",
+          "type": "Hauptwort",
+          "id": 139
+        },
+        {
+          "name": "Einzelzimmer",
+          "type": "Hauptwort",
+          "id": 140
+        },
+        {
+          "name": "Eis",
+          "type": "Hauptwort",
+          "id": 141
+        },
+        {
+          "name": "Eltern",
+          "type": "Hauptwort",
+          "id": 142
+        },
+        {
+          "name": "Empfänger",
+          "type": "Hauptwort",
+          "id": 143
+        },
+        {
+          "name": "Empfang",
+          "type": "Hauptwort",
+          "id": 144
+        },
+        {
+          "name": "Ende",
+          "type": "Hauptwort",
+          "id": 145
+        },
+        {
+          "name": "Enkel",
+          "type": "Hauptwort",
+          "id": 146
+        },
+        {
+          "name": "Entschuldigung",
+          "type": "Hauptwort",
+          "id": 147
+        },
+        {
+          "name": "Erdgeschoss",
+          "type": "Hauptwort",
+          "id": 148
+        },
+        {
+          "name": "Erfahrung",
+          "type": "Hauptwort",
+          "id": 149
+        },
+        {
+          "name": "Ergebnis",
+          "type": "Hauptwort",
+          "id": 150
+        },
+        {
+          "name": "Erlaubnis",
+          "type": "Hauptwort",
+          "id": 151
+        },
+        {
+          "name": "Ermäßigung",
+          "type": "Hauptwort",
+          "id": 152
+        },
+        {
+          "name": "Erwachsene",
+          "type": "Hauptwort",
+          "id": 153
+        },
+        {
+          "name": "Essen",
+          "type": "Hauptwort",
+          "id": 154
+        },
+        {
+          "name": "Export",
+          "type": "Hauptwort",
+          "id": 155
+        },
+        {
+          "name": "Fähre",
+          "type": "Hauptwort",
+          "id": 156
+        },
+        {
+          "name": "Führerschein",
+          "type": "Hauptwort",
+          "id": 157
+        },
+        {
+          "name": "Führung",
+          "type": "Hauptwort",
+          "id": 158
+        },
+        {
+          "name": "Fabrik",
+          "type": "Hauptwort",
+          "id": 159
+        },
+        {
+          "name": "Fahrer",
+          "type": "Hauptwort",
+          "id": 160
+        },
+        {
+          "name": "Fahrkarte",
+          "type": "Hauptwort",
+          "id": 161
+        },
+        {
+          "name": "Fahrplan",
+          "type": "Hauptwort",
+          "id": 162
+        },
+        {
+          "name": "Fahrrad",
+          "type": "Hauptwort",
+          "id": 163
+        },
+        {
+          "name": "Familie",
+          "type": "Hauptwort",
+          "id": 164
+        },
+        {
+          "name": "Familienname",
+          "type": "Hauptwort",
+          "id": 165
+        },
+        {
+          "name": "Familienstand",
+          "type": "Hauptwort",
+          "id": 166
+        },
+        {
+          "name": "Farbe",
+          "type": "Hauptwort",
+          "id": 167
+        },
+        {
+          "name": "Fax",
+          "type": "Hauptwort",
+          "id": 168
+        },
+        {
+          "name": "Februar",
+          "type": "Hauptwort",
+          "id": 169
+        },
+        {
+          "name": "Fehler",
+          "type": "Hauptwort",
+          "id": 170
+        },
+        {
+          "name": "Fenster",
+          "type": "Hauptwort",
+          "id": 171
+        },
+        {
+          "name": "Ferien",
+          "type": "Hauptwort",
+          "id": 172
+        },
+        {
+          "name": "Fernsehgerät",
+          "type": "Hauptwort",
+          "id": 173
+        },
+        {
+          "name": "Fest",
+          "type": "Hauptwort",
+          "id": 174
+        },
+        {
+          "name": "Feuer",
+          "type": "Hauptwort",
+          "id": 175
+        },
+        {
+          "name": "Feuerwehr",
+          "type": "Hauptwort",
+          "id": 176
+        },
+        {
+          "name": "Feuerzeug",
+          "type": "Hauptwort",
+          "id": 177
+        },
+        {
+          "name": "Fieber",
+          "type": "Hauptwort",
+          "id": 178
+        },
+        {
+          "name": "Film",
+          "type": "Hauptwort",
+          "id": 179
+        },
+        {
+          "name": "Firma",
+          "type": "Hauptwort",
+          "id": 180
+        },
+        {
+          "name": "Fisch",
+          "type": "Hauptwort",
+          "id": 181
+        },
+        {
+          "name": "Flasche",
+          "type": "Hauptwort",
+          "id": 182
+        },
+        {
+          "name": "Fleisch",
+          "type": "Hauptwort",
+          "id": 183
+        },
+        {
+          "name": "Flughafen",
+          "type": "Hauptwort",
+          "id": 184
+        },
+        {
+          "name": "Flugzeug",
+          "type": "Hauptwort",
+          "id": 185
+        },
+        {
+          "name": "Flur",
+          "type": "Hauptwort",
+          "id": 186
+        },
+        {
+          "name": "Fluss",
+          "type": "Hauptwort",
+          "id": 187
+        },
+        {
+          "name": "Formular",
+          "type": "Hauptwort",
+          "id": 188
+        },
+        {
+          "name": "Foto",
+          "type": "Hauptwort",
+          "id": 189
+        },
+        {
+          "name": "Fotoapparat",
+          "type": "Hauptwort",
+          "id": 190
+        },
+        {
+          "name": "Frühjahr",
+          "type": "Hauptwort",
+          "id": 191
+        },
+        {
+          "name": "Frühling",
+          "type": "Hauptwort",
+          "id": 192
+        },
+        {
+          "name": "Frühstück",
+          "type": "Hauptwort",
+          "id": 193
+        },
+        {
+          "name": "Frage",
+          "type": "Hauptwort",
+          "id": 194
+        },
+        {
+          "name": "Frau",
+          "type": "Hauptwort",
+          "id": 195
+        },
+        {
+          "name": "Freitag",
+          "type": "Hauptwort",
+          "id": 196
+        },
+        {
+          "name": "Freizeit",
+          "type": "Hauptwort",
+          "id": 197
+        },
+        {
+          "name": "Freund",
+          "type": "Hauptwort",
+          "id": 198
+        },
+        {
+          "name": "Freundin",
+          "type": "Hauptwort",
+          "id": 199
+        },
+        {
+          "name": "Friseur",
+          "type": "Hauptwort",
+          "id": 200
+        },
+        {
+          "name": "Frist",
+          "type": "Hauptwort",
+          "id": 201
+        },
+        {
+          "name": "Fuß",
+          "type": "Hauptwort",
+          "id": 202
+        },
+        {
+          "name": "Fußball",
+          "type": "Hauptwort",
+          "id": 203
+        },
+        {
+          "name": "Fundbüro",
+          "type": "Hauptwort",
+          "id": 204
+        },
+        {
+          "name": "Gabel",
+          "type": "Hauptwort",
+          "id": 205
+        },
+        {
+          "name": "Garage",
+          "type": "Hauptwort",
+          "id": 206
+        },
+        {
+          "name": "Garten",
+          "type": "Hauptwort",
+          "id": 207
+        },
+        {
+          "name": "Gas",
+          "type": "Hauptwort",
+          "id": 208
+        },
+        {
+          "name": "Gast",
+          "type": "Hauptwort",
+          "id": 209
+        },
+        {
+          "name": "Gebühr",
+          "type": "Hauptwort",
+          "id": 210
+        },
+        {
+          "name": "Geburtsjahr",
+          "type": "Hauptwort",
+          "id": 211
+        },
+        {
+          "name": "Geburtsort",
+          "type": "Hauptwort",
+          "id": 212
+        },
+        {
+          "name": "Geburtstag",
+          "type": "Hauptwort",
+          "id": 213
+        },
+        {
+          "name": "Gegenteil",
+          "type": "Hauptwort",
+          "id": 214
+        },
+        {
+          "name": "Geld",
+          "type": "Hauptwort",
+          "id": 215
+        },
+        {
+          "name": "Geldbörse",
+          "type": "Hauptwort",
+          "id": 216
+        },
+        {
+          "name": "Gemüse",
+          "type": "Hauptwort",
+          "id": 217
+        },
+        {
+          "name": "Gepäck",
+          "type": "Hauptwort",
+          "id": 218
+        },
+        {
+          "name": "Gericht",
+          "type": "Hauptwort",
+          "id": 219
+        },
+        {
+          "name": "Gesamtschule",
+          "type": "Hauptwort",
+          "id": 220
+        },
+        {
+          "name": "Geschäft",
+          "type": "Hauptwort",
+          "id": 221
+        },
+        {
+          "name": "Geschenk",
+          "type": "Hauptwort",
+          "id": 222
+        },
+        {
+          "name": "Geschirr",
+          "type": "Hauptwort",
+          "id": 223
+        },
+        {
+          "name": "Geschwister",
+          "type": "Hauptwort",
+          "id": 224
+        },
+        {
+          "name": "Gesicht",
+          "type": "Hauptwort",
+          "id": 225
+        },
+        {
+          "name": "Gespräch",
+          "type": "Hauptwort",
+          "id": 226
+        },
+        {
+          "name": "Gesundheit",
+          "type": "Hauptwort",
+          "id": 227
+        },
+        {
+          "name": "Getränk",
+          "type": "Hauptwort",
+          "id": 228
+        },
+        {
+          "name": "Gewicht",
+          "type": "Hauptwort",
+          "id": 229
+        },
+        {
+          "name": "Gewitter",
+          "type": "Hauptwort",
+          "id": 230
+        },
+        {
+          "name": "Glück",
+          "type": "Hauptwort",
+          "id": 231
+        },
+        {
+          "name": "Glückwunsch",
+          "type": "Hauptwort",
+          "id": 232
+        },
+        {
+          "name": "Glas",
+          "type": "Hauptwort",
+          "id": 233
+        },
+        {
+          "name": "Gleis",
+          "type": "Hauptwort",
+          "id": 234
+        },
+        {
+          "name": "Goethe-Institut",
+          "type": "Hauptwort",
+          "id": 235
+        },
+        {
+          "name": "Größe",
+          "type": "Hauptwort",
+          "id": 236
+        },
+        {
+          "name": "Die Grenze",
+          "type": "Hauptwort",
+          "id": 237
+        },
+        {
+          "name": "Grippe",
+          "type": "Hauptwort",
+          "id": 238
+        },
+        {
+          "name": "Großeltern",
+          "type": "Hauptwort",
+          "id": 239
+        },
+        {
+          "name": "Großmutter",
+          "type": "Hauptwort",
+          "id": 240
+        },
+        {
+          "name": "Großvater",
+          "type": "Hauptwort",
+          "id": 241
+        },
+        {
+          "name": "Gruß",
+          "type": "Hauptwort",
+          "id": 242
+        },
+        {
+          "name": "Grundschule",
+          "type": "Hauptwort",
+          "id": 243
+        },
+        {
+          "name": "Gruppe",
+          "type": "Hauptwort",
+          "id": 244
+        },
+        {
+          "name": "Guthaben",
+          "type": "Hauptwort",
+          "id": 245
+        },
+        {
+          "name": "Gymnasium",
+          "type": "Hauptwort",
+          "id": 246
+        },
+        {
+          "name": "Hähnchen",
+          "type": "Hauptwort",
+          "id": 247
+        },
+        {
+          "name": "Haar",
+          "type": "Hauptwort",
+          "id": 248
+        },
+        {
+          "name": "Halbpension",
+          "type": "Hauptwort",
+          "id": 249
+        },
+        {
+          "name": "Halle",
+          "type": "Hauptwort",
+          "id": 250
+        },
+        {
+          "name": "Hals",
+          "type": "Hauptwort",
+          "id": 251
+        },
+        {
+          "name": "Haltestelle",
+          "type": "Hauptwort",
+          "id": 252
+        },
+        {
+          "name": "Hand",
+          "type": "Hauptwort",
+          "id": 253
+        },
+        {
+          "name": "Handtuch",
+          "type": "Hauptwort",
+          "id": 254
+        },
+        {
+          "name": "Handy",
+          "type": "Hauptwort",
+          "id": 255
+        },
+        {
+          "name": "Haus",
+          "type": "Hauptwort",
+          "id": 256
+        },
+        {
+          "name": "Hausaufgabe",
+          "type": "Hauptwort",
+          "id": 257
+        },
+        {
+          "name": "Hausfrau",
+          "type": "Hauptwort",
+          "id": 258
+        },
+        {
+          "name": "Haushalt",
+          "type": "Hauptwort",
+          "id": 259
+        },
+        {
+          "name": "Hausmann",
+          "type": "Hauptwort",
+          "id": 260
+        },
+        {
+          "name": "Heimat",
+          "type": "Hauptwort",
+          "id": 261
+        },
+        {
+          "name": "Heizung",
+          "type": "Hauptwort",
+          "id": 262
+        },
+        {
+          "name": "Hemd",
+          "type": "Hauptwort",
+          "id": 263
+        },
+        {
+          "name": "Herbst",
+          "type": "Hauptwort",
+          "id": 264
+        },
+        {
+          "name": "Herd",
+          "type": "Hauptwort",
+          "id": 265
+        },
+        {
+          "name": "Herr",
+          "type": "Hauptwort",
+          "id": 266
+        },
+        {
+          "name": "Herz",
+          "type": "Hauptwort",
+          "id": 267
+        },
+        {
+          "name": "Hilfe",
+          "type": "Hauptwort",
+          "id": 268
+        },
+        {
+          "name": "Hobby",
+          "type": "Hauptwort",
+          "id": 269
+        },
+        {
+          "name": "Holz",
+          "type": "Hauptwort",
+          "id": 270
+        },
+        {
+          "name": "Hose",
+          "type": "Hauptwort",
+          "id": 271
+        },
+        {
+          "name": "Hund",
+          "type": "Hauptwort",
+          "id": 272
+        },
+        {
+          "name": "Hunger",
+          "type": "Hauptwort",
+          "id": 273
+        },
+        {
+          "name": "Idee",
+          "type": "Hauptwort",
+          "id": 274
+        },
+        {
+          "name": "Import",
+          "type": "Hauptwort",
+          "id": 275
+        },
+        {
+          "name": "Industrie",
+          "type": "Hauptwort",
+          "id": 276
+        },
+        {
+          "name": "Information",
+          "type": "Hauptwort",
+          "id": 277
+        },
+        {
+          "name": "Inhalt",
+          "type": "Hauptwort",
+          "id": 278
+        },
+        {
+          "name": "Internet",
+          "type": "Hauptwort",
+          "id": 279
+        },
+        {
+          "name": "Jacke",
+          "type": "Hauptwort",
+          "id": 280
+        },
+        {
+          "name": "Jahr",
+          "type": "Hauptwort",
+          "id": 281
+        },
+        {
+          "name": "Januar",
+          "type": "Hauptwort",
+          "id": 282
+        },
+        {
+          "name": "Job",
+          "type": "Hauptwort",
+          "id": 283
+        },
+        {
+          "name": "Jugendherberge",
+          "type": "Hauptwort",
+          "id": 284
+        },
+        {
+          "name": "Jugendliche",
+          "type": "Hauptwort",
+          "id": 285
+        },
+        {
+          "name": "Juli",
+          "type": "Hauptwort",
+          "id": 286
+        },
+        {
+          "name": "Junge",
+          "type": "Hauptwort",
+          "id": 287
+        },
+        {
+          "name": "Juni",
+          "type": "Hauptwort",
+          "id": 288
+        },
+        {
+          "name": "Käse",
+          "type": "Hauptwort",
+          "id": 289
+        },
+        {
+          "name": "Körper",
+          "type": "Hauptwort",
+          "id": 290
+        },
+        {
+          "name": "Küche",
+          "type": "Hauptwort",
+          "id": 291
+        },
+        {
+          "name": "Kühlschrank",
+          "type": "Hauptwort",
+          "id": 292
+        },
+        {
+          "name": "Kündigung",
+          "type": "Hauptwort",
+          "id": 293
+        },
+        {
+          "name": "Kaffee",
+          "type": "Hauptwort",
+          "id": 294
+        },
+        {
+          "name": "Kalender",
+          "type": "Hauptwort",
+          "id": 295
+        },
+        {
+          "name": "Kamera",
+          "type": "Hauptwort",
+          "id": 296
+        },
+        {
+          "name": "Kanne",
+          "type": "Hauptwort",
+          "id": 297
+        },
+        {
+          "name": "Karte",
+          "type": "Hauptwort",
+          "id": 298
+        },
+        {
+          "name": "Kartoffel",
+          "type": "Hauptwort",
+          "id": 299
+        },
+        {
+          "name": "Kasse",
+          "type": "Hauptwort",
+          "id": 300
+        },
+        {
+          "name": "Kassette",
+          "type": "Hauptwort",
+          "id": 301
+        },
+        {
+          "name": "Kassettenrecorder",
+          "type": "Hauptwort",
+          "id": 302
+        },
+        {
+          "name": "Katze",
+          "type": "Hauptwort",
+          "id": 303
+        },
+        {
+          "name": "Keller",
+          "type": "Hauptwort",
+          "id": 304
+        },
+        {
+          "name": "Kellner",
+          "type": "Hauptwort",
+          "id": 305
+        },
+        {
+          "name": "Kenntnisse",
+          "type": "Hauptwort",
+          "id": 306
+        },
+        {
+          "name": "Kennzeichen",
+          "type": "Hauptwort",
+          "id": 307
+        },
+        {
+          "name": "Kette",
+          "type": "Hauptwort",
+          "id": 308
+        },
+        {
+          "name": "Kfz",
+          "type": "Hauptwort",
+          "id": 309
+        },
+        {
+          "name": "Kind",
+          "type": "Hauptwort",
+          "id": 310
+        },
+        {
+          "name": "Kindergarten",
+          "type": "Hauptwort",
+          "id": 311
+        },
+        {
+          "name": "Kinderwagen",
+          "type": "Hauptwort",
+          "id": 312
+        },
+        {
+          "name": "Kino",
+          "type": "Hauptwort",
+          "id": 313
+        },
+        {
+          "name": "Kiosk",
+          "type": "Hauptwort",
+          "id": 314
+        },
+        {
+          "name": "Kirche",
+          "type": "Hauptwort",
+          "id": 315
+        },
+        {
+          "name": "Klasse",
+          "type": "Hauptwort",
+          "id": 316
+        },
+        {
+          "name": "Kleid",
+          "type": "Hauptwort",
+          "id": 317
+        },
+        {
+          "name": "Kleidung",
+          "type": "Hauptwort",
+          "id": 318
+        },
+        {
+          "name": "Kneipe",
+          "type": "Hauptwort",
+          "id": 319
+        },
+        {
+          "name": "Koffer",
+          "type": "Hauptwort",
+          "id": 320
+        },
+        {
+          "name": "Kollege",
+          "type": "Hauptwort",
+          "id": 321
+        },
+        {
+          "name": "Kollegin",
+          "type": "Hauptwort",
+          "id": 322
+        },
+        {
+          "name": "Konsulat",
+          "type": "Hauptwort",
+          "id": 323
+        },
+        {
+          "name": "Kontakt",
+          "type": "Hauptwort",
+          "id": 324
+        },
+        {
+          "name": "Konto",
+          "type": "Hauptwort",
+          "id": 325
+        },
+        {
+          "name": "Kontrolle",
+          "type": "Hauptwort",
+          "id": 326
+        },
+        {
+          "name": "Konzert",
+          "type": "Hauptwort",
+          "id": 327
+        },
+        {
+          "name": "Kopf",
+          "type": "Hauptwort",
+          "id": 328
+        },
+        {
+          "name": "Kosmetik",
+          "type": "Hauptwort",
+          "id": 329
+        },
+        {
+          "name": "Krankenkasse",
+          "type": "Hauptwort",
+          "id": 330
+        },
+        {
+          "name": "Krankheit",
+          "type": "Hauptwort",
+          "id": 331
+        },
+        {
+          "name": "Kredit",
+          "type": "Hauptwort",
+          "id": 332
+        },
+        {
+          "name": "Kreditkarte",
+          "type": "Hauptwort",
+          "id": 333
+        },
+        {
+          "name": "Kreis",
+          "type": "Hauptwort",
+          "id": 334
+        },
+        {
+          "name": "Kreuzung",
+          "type": "Hauptwort",
+          "id": 335
+        },
+        {
+          "name": "Kuchen",
+          "type": "Hauptwort",
+          "id": 336
+        },
+        {
+          "name": "Kugelschreiber",
+          "type": "Hauptwort",
+          "id": 337
+        },
+        {
+          "name": "Kunde",
+          "type": "Hauptwort",
+          "id": 338
+        },
+        {
+          "name": "Kundin",
+          "type": "Hauptwort",
+          "id": 339
+        },
+        {
+          "name": "Kurs",
+          "type": "Hauptwort",
+          "id": 340
+        },
+        {
+          "name": "Löffel",
+          "type": "Hauptwort",
+          "id": 341
+        },
+        {
+          "name": "Lösung",
+          "type": "Hauptwort",
+          "id": 342
+        },
+        {
+          "name": "Laden",
+          "type": "Hauptwort",
+          "id": 343
+        },
+        {
+          "name": "Lager",
+          "type": "Hauptwort",
+          "id": 344
+        },
+        {
+          "name": "Lampe",
+          "type": "Hauptwort",
+          "id": 345
+        },
+        {
+          "name": "Land",
+          "type": "Hauptwort",
+          "id": 346
+        },
+        {
+          "name": "Landschaft",
+          "type": "Hauptwort",
+          "id": 347
+        },
+        {
+          "name": "Leben",
+          "type": "Hauptwort",
+          "id": 348
+        },
+        {
+          "name": "Lebensmittel",
+          "type": "Hauptwort",
+          "id": 349
+        },
+        {
+          "name": "Leid",
+          "type": "Hauptwort",
+          "id": 350
+        },
+        {
+          "name": "Lehre",
+          "type": "Hauptwort",
+          "id": 351
+        },
+        {
+          "name": "Lehrer",
+          "type": "Hauptwort",
+          "id": 352
+        },
+        {
+          "name": "Lehrerin",
+          "type": "Hauptwort",
+          "id": 353
+        },
+        {
+          "name": "Leute",
+          "type": "Hauptwort",
+          "id": 354
+        },
+        {
+          "name": "Licht",
+          "type": "Hauptwort",
+          "id": 355
+        },
+        {
+          "name": "Lied",
+          "type": "Hauptwort",
+          "id": 356
+        },
+        {
+          "name": "Lkw",
+          "type": "Hauptwort",
+          "id": 357
+        },
+        {
+          "name": "Loch",
+          "type": "Hauptwort",
+          "id": 358
+        },
+        {
+          "name": "Lohn",
+          "type": "Hauptwort",
+          "id": 359
+        },
+        {
+          "name": "Lokal",
+          "type": "Hauptwort",
+          "id": 360
+        },
+        {
+          "name": "Luft",
+          "type": "Hauptwort",
+          "id": 361
+        },
+        {
+          "name": "Lust",
+          "type": "Hauptwort",
+          "id": 362
+        },
+        {
+          "name": "Mädchen",
+          "type": "Hauptwort",
+          "id": 363
+        },
+        {
+          "name": "März",
+          "type": "Hauptwort",
+          "id": 364
+        },
+        {
+          "name": "Möbel",
+          "type": "Hauptwort",
+          "id": 365
+        },
+        {
+          "name": "Müll",
+          "type": "Hauptwort",
+          "id": 366
+        },
+        {
+          "name": "Mülltonne",
+          "type": "Hauptwort",
+          "id": 367
+        },
+        {
+          "name": "Magen",
+          "type": "Hauptwort",
+          "id": 368
+        },
+        {
+          "name": "Mai",
+          "type": "Hauptwort",
+          "id": 369
+        },
+        {
+          "name": "Mal",
+          "type": "Hauptwort",
+          "id": 370
+        },
+        {
+          "name": "Mann",
+          "type": "Hauptwort",
+          "id": 371
+        },
+        {
+          "name": "Mantel",
+          "type": "Hauptwort",
+          "id": 372
+        },
+        {
+          "name": "Markt",
+          "type": "Hauptwort",
+          "id": 373
+        },
+        {
+          "name": "Maschine",
+          "type": "Hauptwort",
+          "id": 374
+        },
+        {
+          "name": "Material",
+          "type": "Hauptwort",
+          "id": 375
+        },
+        {
+          "name": "Mechaniker",
+          "type": "Hauptwort",
+          "id": 376
+        },
+        {
+          "name": "Medikament",
+          "type": "Hauptwort",
+          "id": 377
+        },
+        {
+          "name": "Meer",
+          "type": "Hauptwort",
+          "id": 378
+        },
+        {
+          "name": "Mehrwertsteuer",
+          "type": "Hauptwort",
+          "id": 379
+        },
+        {
+          "name": "Meinung",
+          "type": "Hauptwort",
+          "id": 380
+        },
+        {
+          "name": "Menge",
+          "type": "Hauptwort",
+          "id": 381
+        },
+        {
+          "name": "Mensch",
+          "type": "Hauptwort",
+          "id": 382
+        },
+        {
+          "name": "Messer",
+          "type": "Hauptwort",
+          "id": 383
+        },
+        {
+          "name": "Metall",
+          "type": "Hauptwort",
+          "id": 384
+        },
+        {
+          "name": "Miete",
+          "type": "Hauptwort",
+          "id": 385
+        },
+        {
+          "name": "Milch",
+          "type": "Hauptwort",
+          "id": 386
+        },
+        {
+          "name": "Minute",
+          "type": "Hauptwort",
+          "id": 387
+        },
+        {
+          "name": "Mittag",
+          "type": "Hauptwort",
+          "id": 388
+        },
+        {
+          "name": "Mitte",
+          "type": "Hauptwort",
+          "id": 389
+        },
+        {
+          "name": "Mitteilung",
+          "type": "Hauptwort",
+          "id": 390
+        },
+        {
+          "name": "Mittel",
+          "type": "Hauptwort",
+          "id": 391
+        },
+        {
+          "name": "Mittelschule",
+          "type": "Hauptwort",
+          "id": 392
+        },
+        {
+          "name": "Mittwoch",
+          "type": "Hauptwort",
+          "id": 393
+        },
+        {
+          "name": "Mode",
+          "type": "Hauptwort",
+          "id": 394
+        },
+        {
+          "name": "Moment",
+          "type": "Hauptwort",
+          "id": 395
+        },
+        {
+          "name": "Monat",
+          "type": "Hauptwort",
+          "id": 396
+        },
+        {
+          "name": "Montag",
+          "type": "Hauptwort",
+          "id": 397
+        },
+        {
+          "name": "Morgen",
+          "type": "Hauptwort",
+          "id": 398
+        },
+        {
+          "name": "Motor",
+          "type": "Hauptwort",
+          "id": 399
+        },
+        {
+          "name": "Mund",
+          "type": "Hauptwort",
+          "id": 400
+        },
+        {
+          "name": "Museum",
+          "type": "Hauptwort",
+          "id": 401
+        },
+        {
+          "name": "Musik",
+          "type": "Hauptwort",
+          "id": 402
+        },
+        {
+          "name": "Mutter",
+          "type": "Hauptwort",
+          "id": 403
+        },
+        {
+          "name": "Nähe",
+          "type": "Hauptwort",
+          "id": 404
+        },
+        {
+          "name": "Nachbar",
+          "type": "Hauptwort",
+          "id": 405
+        },
+        {
+          "name": "Nachbarin",
+          "type": "Hauptwort",
+          "id": 406
+        },
+        {
+          "name": "Nachmittag",
+          "type": "Hauptwort",
+          "id": 407
+        },
+        {
+          "name": "Nachrichten",
+          "type": "Hauptwort",
+          "id": 408
+        },
+        {
+          "name": "Nacht",
+          "type": "Hauptwort",
+          "id": 409
+        },
+        {
+          "name": "Name",
+          "type": "Hauptwort",
+          "id": 410
+        },
+        {
+          "name": "Natur",
+          "type": "Hauptwort",
+          "id": 411
+        },
+        {
+          "name": "Nebel",
+          "type": "Hauptwort",
+          "id": 412
+        },
+        {
+          "name": "Norden",
+          "type": "Hauptwort",
+          "id": 413
+        },
+        {
+          "name": "Notarzt",
+          "type": "Hauptwort",
+          "id": 414
+        },
+        {
+          "name": "Note",
+          "type": "Hauptwort",
+          "id": 415
+        },
+        {
+          "name": "Notfall",
+          "type": "Hauptwort",
+          "id": 416
+        },
+        {
+          "name": "Notiz",
+          "type": "Hauptwort",
+          "id": 417
+        },
+        {
+          "name": "November",
+          "type": "Hauptwort",
+          "id": 418
+        },
+        {
+          "name": "Nudel",
+          "type": "Hauptwort",
+          "id": 419
+        },
+        {
+          "name": "Nummer",
+          "type": "Hauptwort",
+          "id": 420
+        },
+        {
+          "name": "Ober",
+          "type": "Hauptwort",
+          "id": 421
+        },
+        {
+          "name": "Obst",
+          "type": "Hauptwort",
+          "id": 422
+        },
+        {
+          "name": "Oktober",
+          "type": "Hauptwort",
+          "id": 423
+        },
+        {
+          "name": "Oma",
+          "type": "Hauptwort",
+          "id": 424
+        },
+        {
+          "name": "Opa",
+          "type": "Hauptwort",
+          "id": 425
+        },
+        {
+          "name": "Operation",
+          "type": "Hauptwort",
+          "id": 426
+        },
+        {
+          "name": "Orange",
+          "type": "Hauptwort",
+          "id": 427
+        },
+        {
+          "name": "Ordnung",
+          "type": "Hauptwort",
+          "id": 428
+        },
+        {
+          "name": "Ort",
+          "type": "Hauptwort",
+          "id": 429
+        },
+        {
+          "name": "Osten",
+          "type": "Hauptwort",
+          "id": 430
+        },
+        {
+          "name": "Öl",
+          "type": "Hauptwort",
+          "id": 431
+        },
+        {
+          "name": "Päckchen",
+          "type": "Hauptwort",
+          "id": 432
+        },
+        {
+          "name": "Paket",
+          "type": "Hauptwort",
+          "id": 433
+        },
+        {
+          "name": "Panne",
+          "type": "Hauptwort",
+          "id": 434
+        },
+        {
+          "name": "Papier",
+          "type": "Hauptwort",
+          "id": 435
+        },
+        {
+          "name": "Papiere",
+          "type": "Hauptwort",
+          "id": 436
+        },
+        {
+          "name": "Parfüm",
+          "type": "Hauptwort",
+          "id": 437
+        },
+        {
+          "name": "Park",
+          "type": "Hauptwort",
+          "id": 438
+        },
+        {
+          "name": "Partei",
+          "type": "Hauptwort",
+          "id": 439
+        },
+        {
+          "name": "Partner",
+          "type": "Hauptwort",
+          "id": 440
+        },
+        {
+          "name": "Partnerin",
+          "type": "Hauptwort",
+          "id": 441
+        },
+        {
+          "name": "Party",
+          "type": "Hauptwort",
+          "id": 442
+        },
+        {
+          "name": "Pass",
+          "type": "Hauptwort",
+          "id": 443
+        },
+        {
+          "name": "Pause",
+          "type": "Hauptwort",
+          "id": 444
+        },
+        {
+          "name": "Pension",
+          "type": "Hauptwort",
+          "id": 445
+        },
+        {
+          "name": "Pkw",
+          "type": "Hauptwort",
+          "id": 446
+        },
+        {
+          "name": "Plan",
+          "type": "Hauptwort",
+          "id": 447
+        },
+        {
+          "name": "Plastik",
+          "type": "Hauptwort",
+          "id": 448
+        },
+        {
+          "name": "Platz",
+          "type": "Hauptwort",
+          "id": 449
+        },
+        {
+          "name": "Polizei",
+          "type": "Hauptwort",
+          "id": 450
+        },
+        {
+          "name": "Pommes frites",
+          "type": "Hauptwort",
+          "id": 451
+        },
+        {
+          "name": "Portion",
+          "type": "Hauptwort",
+          "id": 452
+        },
+        {
+          "name": "Post",
+          "type": "Hauptwort",
+          "id": 453
+        },
+        {
+          "name": "Postleitzahl",
+          "type": "Hauptwort",
+          "id": 454
+        },
+        {
+          "name": "Prüfung",
+          "type": "Hauptwort",
+          "id": 455
+        },
+        {
+          "name": "Praktikum",
+          "type": "Hauptwort",
+          "id": 456
+        },
+        {
+          "name": "Praxis",
+          "type": "Hauptwort",
+          "id": 457
+        },
+        {
+          "name": "Preis",
+          "type": "Hauptwort",
+          "id": 458
+        },
+        {
+          "name": "Problem",
+          "type": "Hauptwort",
+          "id": 459
+        },
+        {
+          "name": "Das Produkt",
+          "type": "Hauptwort",
+          "id": 460
+        },
+        {
+          "name": "Programm",
+          "type": "Hauptwort",
+          "id": 461
+        },
+        {
+          "name": "Prospekt",
+          "type": "Hauptwort",
+          "id": 462
+        },
+        {
+          "name": "Pullover",
+          "type": "Hauptwort",
+          "id": 463
+        },
+        {
+          "name": "Qualität",
+          "type": "Hauptwort",
+          "id": 464
+        },
+        {
+          "name": "Quittung",
+          "type": "Hauptwort",
+          "id": 465
+        },
+        {
+          "name": "Rücken",
+          "type": "Hauptwort",
+          "id": 466
+        },
+        {
+          "name": "Rabatt",
+          "type": "Hauptwort",
+          "id": 467
+        },
+        {
+          "name": "Radio",
+          "type": "Hauptwort",
+          "id": 468
+        },
+        {
+          "name": "Rathaus",
+          "type": "Hauptwort",
+          "id": 469
+        },
+        {
+          "name": "Raucher",
+          "type": "Hauptwort",
+          "id": 470
+        },
+        {
+          "name": "Raucherin",
+          "type": "Hauptwort",
+          "id": 471
+        },
+        {
+          "name": "Raum",
+          "type": "Hauptwort",
+          "id": 472
+        },
+        {
+          "name": "Realschule",
+          "type": "Hauptwort",
+          "id": 473
+        },
+        {
+          "name": "Rechnung",
+          "type": "Hauptwort",
+          "id": 474
+        },
+        {
+          "name": "Regen",
+          "type": "Hauptwort",
+          "id": 475
+        },
+        {
+          "name": "Reifen",
+          "type": "Hauptwort",
+          "id": 476
+        },
+        {
+          "name": "Reinigung",
+          "type": "Hauptwort",
+          "id": 477
+        },
+        {
+          "name": "Reis",
+          "type": "Hauptwort",
+          "id": 478
+        },
+        {
+          "name": "Reise",
+          "type": "Hauptwort",
+          "id": 479
+        },
+        {
+          "name": "Reisebüro",
+          "type": "Hauptwort",
+          "id": 480
+        },
+        {
+          "name": "Reiseführer",
+          "type": "Hauptwort",
+          "id": 481
+        },
+        {
+          "name": "Reparatur",
+          "type": "Hauptwort",
+          "id": 482
+        },
+        {
+          "name": "Restaurant",
+          "type": "Hauptwort",
+          "id": 483
+        },
+        {
+          "name": "Rezept",
+          "type": "Hauptwort",
+          "id": 484
+        },
+        {
+          "name": "Rezeption",
+          "type": "Hauptwort",
+          "id": 485
+        },
+        {
+          "name": "Rind",
+          "type": "Hauptwort",
+          "id": 486
+        },
+        {
+          "name": "Rock",
+          "type": "Hauptwort",
+          "id": 487
+        },
+        {
+          "name": "Rose",
+          "type": "Hauptwort",
+          "id": 488
+        },
+        {
+          "name": "Rundgang",
+          "type": "Hauptwort",
+          "id": 489
+        },
+        {
+          "name": "Süden",
+          "type": "Hauptwort",
+          "id": 490
+        },
+        {
+          "name": "S-Bahn",
+          "type": "Hauptwort",
+          "id": 491
+        },
+        {
+          "name": "Sache",
+          "type": "Hauptwort",
+          "id": 492
+        },
+        {
+          "name": "Saft",
+          "type": "Hauptwort",
+          "id": 493
+        },
+        {
+          "name": "Salat",
+          "type": "Hauptwort",
+          "id": 494
+        },
+        {
+          "name": "Salz",
+          "type": "Hauptwort",
+          "id": 495
+        },
+        {
+          "name": "Samstag/Sonnabend",
+          "type": "Hauptwort",
+          "id": 496
+        },
+        {
+          "name": "Satz",
+          "type": "Hauptwort",
+          "id": 497
+        },
+        {
+          "name": "Schüler",
+          "type": "Hauptwort",
+          "id": 498
+        },
+        {
+          "name": "Schülerin",
+          "type": "Hauptwort",
+          "id": 499
+        },
+        {
+          "name": "Schalter",
+          "type": "Hauptwort",
+          "id": 500
+        },
+        {
+          "name": "Scheckkarte",
+          "type": "Hauptwort",
+          "id": 501
+        },
+        {
+          "name": "Schiff",
+          "type": "Hauptwort",
+          "id": 502
+        },
+        {
+          "name": "Schild",
+          "type": "Hauptwort",
+          "id": 503
+        },
+        {
+          "name": "Schinken",
+          "type": "Hauptwort",
+          "id": 504
+        },
+        {
+          "name": "Schirm",
+          "type": "Hauptwort",
+          "id": 505
+        },
+        {
+          "name": "Schlüssel",
+          "type": "Hauptwort",
+          "id": 506
+        },
+        {
+          "name": "Schloss",
+          "type": "Hauptwort",
+          "id": 507
+        },
+        {
+          "name": "Schluss",
+          "type": "Hauptwort",
+          "id": 508
+        },
+        {
+          "name": "Schmerzen",
+          "type": "Hauptwort",
+          "id": 509
+        },
+        {
+          "name": "Schnee",
+          "type": "Hauptwort",
+          "id": 510
+        },
+        {
+          "name": "Schnupfen",
+          "type": "Hauptwort",
+          "id": 511
+        },
+        {
+          "name": "Schokolade",
+          "type": "Hauptwort",
+          "id": 512
+        },
+        {
+          "name": "Schrank",
+          "type": "Hauptwort",
+          "id": 513
+        },
+        {
+          "name": "Schuh",
+          "type": "Hauptwort",
+          "id": 514
+        },
+        {
+          "name": "Schule",
+          "type": "Hauptwort",
+          "id": 515
+        },
+        {
+          "name": "Schwein",
+          "type": "Hauptwort",
+          "id": 516
+        },
+        {
+          "name": "Schwester",
+          "type": "Hauptwort",
+          "id": 517
+        },
+        {
+          "name": "Schwimmbad",
+          "type": "Hauptwort",
+          "id": 518
+        },
+        {
+          "name": "See",
+          "type": "Hauptwort",
+          "id": 519
+        },
+        {
+          "name": "Sehenswürdigkeit",
+          "type": "Hauptwort",
+          "id": 520
+        },
+        {
+          "name": "Seife",
+          "type": "Hauptwort",
+          "id": 521
+        },
+        {
+          "name": "Sekretärin",
+          "type": "Hauptwort",
+          "id": 522
+        },
+        {
+          "name": "Sekunde",
+          "type": "Hauptwort",
+          "id": 523
+        },
+        {
+          "name": "Sendung",
+          "type": "Hauptwort",
+          "id": 524
+        },
+        {
+          "name": "Senioren",
+          "type": "Hauptwort",
+          "id": 525
+        },
+        {
+          "name": "September",
+          "type": "Hauptwort",
+          "id": 526
+        },
+        {
+          "name": "Service",
+          "type": "Hauptwort",
+          "id": 527
+        },
+        {
+          "name": "Sessel",
+          "type": "Hauptwort",
+          "id": 528
+        },
+        {
+          "name": "Sofa",
+          "type": "Hauptwort",
+          "id": 529
+        },
+        {
+          "name": "Sohn",
+          "type": "Hauptwort",
+          "id": 530
+        },
+        {
+          "name": "Sommer",
+          "type": "Hauptwort",
+          "id": 531
+        },
+        {
+          "name": "Sonderangebot",
+          "type": "Hauptwort",
+          "id": 532
+        },
+        {
+          "name": "Sonne",
+          "type": "Hauptwort",
+          "id": 533
+        },
+        {
+          "name": "Sonntag",
+          "type": "Hauptwort",
+          "id": 534
+        },
+        {
+          "name": "Sorge",
+          "type": "Hauptwort",
+          "id": 535
+        },
+        {
+          "name": "Spülmaschine",
+          "type": "Hauptwort",
+          "id": 536
+        },
+        {
+          "name": "Spaß",
+          "type": "Hauptwort",
+          "id": 537
+        },
+        {
+          "name": "Spaziergang",
+          "type": "Hauptwort",
+          "id": 538
+        },
+        {
+          "name": "Speisekarte",
+          "type": "Hauptwort",
+          "id": 539
+        },
+        {
+          "name": "Spielplatz",
+          "type": "Hauptwort",
+          "id": 540
+        },
+        {
+          "name": "Sprache",
+          "type": "Hauptwort",
+          "id": 541
+        },
+        {
+          "name": "Sprachschule",
+          "type": "Hauptwort",
+          "id": 542
+        },
+        {
+          "name": "Sprechstunde",
+          "type": "Hauptwort",
+          "id": 543
+        },
+        {
+          "name": "Stück",
+          "type": "Hauptwort",
+          "id": 544
+        },
+        {
+          "name": "Stadt",
+          "type": "Hauptwort",
+          "id": 545
+        },
+        {
+          "name": "Standesamt",
+          "type": "Hauptwort",
+          "id": 546
+        },
+        {
+          "name": "Stempel",
+          "type": "Hauptwort",
+          "id": 547
+        },
+        {
+          "name": "Steuer",
+          "type": "Hauptwort",
+          "id": 548
+        },
+        {
+          "name": "Stock",
+          "type": "Hauptwort",
+          "id": 549
+        },
+        {
+          "name": "Stoff",
+          "type": "Hauptwort",
+          "id": 550
+        },
+        {
+          "name": "Straße",
+          "type": "Hauptwort",
+          "id": 551
+        },
+        {
+          "name": "Straßenbahn",
+          "type": "Hauptwort",
+          "id": 552
+        },
+        {
+          "name": "Strand",
+          "type": "Hauptwort",
+          "id": 553
+        },
+        {
+          "name": "Streichholz",
+          "type": "Hauptwort",
+          "id": 554
+        },
+        {
+          "name": "Strom",
+          "type": "Hauptwort",
+          "id": 555
+        },
+        {
+          "name": "Student",
+          "type": "Hauptwort",
+          "id": 556
+        },
+        {
+          "name": "Studentin",
+          "type": "Hauptwort",
+          "id": 557
+        },
+        {
+          "name": "Studium",
+          "type": "Hauptwort",
+          "id": 558
+        },
+        {
+          "name": "Stuhl",
+          "type": "Hauptwort",
+          "id": 559
+        },
+        {
+          "name": "Stunde",
+          "type": "Hauptwort",
+          "id": 560
+        },
+        {
+          "name": "Supermarkt",
+          "type": "Hauptwort",
+          "id": 561
+        },
+        {
+          "name": "Suppe",
+          "type": "Hauptwort",
+          "id": 562
+        },
+        {
+          "name": "Tür",
+          "type": "Hauptwort",
+          "id": 563
+        },
+        {
+          "name": "Tüte",
+          "type": "Hauptwort",
+          "id": 564
+        },
+        {
+          "name": "Tag",
+          "type": "Hauptwort",
+          "id": 565
+        },
+        {
+          "name": "Tankstelle",
+          "type": "Hauptwort",
+          "id": 566
+        },
+        {
+          "name": "Tasche",
+          "type": "Hauptwort",
+          "id": 567
+        },
+        {
+          "name": "Tasse",
+          "type": "Hauptwort",
+          "id": 568
+        },
+        {
+          "name": "Taxi",
+          "type": "Hauptwort",
+          "id": 569
+        },
+        {
+          "name": "Der Tee",
+          "type": "Hauptwort",
+          "id": 570
+        },
+        {
+          "name": "Teil",
+          "type": "Hauptwort",
+          "id": 571
+        },
+        {
+          "name": "Telefon",
+          "type": "Hauptwort",
+          "id": 572
+        },
+        {
+          "name": "Telefonbuch",
+          "type": "Hauptwort",
+          "id": 573
+        },
+        {
+          "name": "Teller",
+          "type": "Hauptwort",
+          "id": 574
+        },
+        {
+          "name": "Teppich",
+          "type": "Hauptwort",
+          "id": 575
+        },
+        {
+          "name": "Termin",
+          "type": "Hauptwort",
+          "id": 576
+        },
+        {
+          "name": "Test",
+          "type": "Hauptwort",
+          "id": 577
+        },
+        {
+          "name": "Text",
+          "type": "Hauptwort",
+          "id": 578
+        },
+        {
+          "name": "Theater",
+          "type": "Hauptwort",
+          "id": 579
+        },
+        {
+          "name": "Thema",
+          "type": "Hauptwort",
+          "id": 580
+        },
+        {
+          "name": "Ticket",
+          "type": "Hauptwort",
+          "id": 581
+        },
+        {
+          "name": "Tier",
+          "type": "Hauptwort",
+          "id": 582
+        },
+        {
+          "name": "Tipp",
+          "type": "Hauptwort",
+          "id": 583
+        },
+        {
+          "name": "Tisch",
+          "type": "Hauptwort",
+          "id": 584
+        },
+        {
+          "name": "Tochter",
+          "type": "Hauptwort",
+          "id": 585
+        },
+        {
+          "name": "Toilette",
+          "type": "Hauptwort",
+          "id": 586
+        },
+        {
+          "name": "Tomate",
+          "type": "Hauptwort",
+          "id": 587
+        },
+        {
+          "name": "Topf",
+          "type": "Hauptwort",
+          "id": 588
+        },
+        {
+          "name": "Tourist",
+          "type": "Hauptwort",
+          "id": 589
+        },
+        {
+          "name": "Treppe",
+          "type": "Hauptwort",
+          "id": 590
+        },
+        {
+          "name": "Trinkgeld",
+          "type": "Hauptwort",
+          "id": 591
+        },
+        {
+          "name": "Turm",
+          "type": "Hauptwort",
+          "id": 592
+        },
+        {
+          "name": "U-Bahn",
+          "type": "Hauptwort",
+          "id": 593
+        },
+        {
+          "name": "Uhr",
+          "type": "Hauptwort",
+          "id": 594
+        },
+        {
+          "name": "Unfall",
+          "type": "Hauptwort",
+          "id": 595
+        },
+        {
+          "name": "Universität",
+          "type": "Hauptwort",
+          "id": 596
+        },
+        {
+          "name": "Unterhaltung",
+          "type": "Hauptwort",
+          "id": 597
+        },
+        {
+          "name": "Unterkunft",
+          "type": "Hauptwort",
+          "id": 598
+        },
+        {
+          "name": "Unterricht",
+          "type": "Hauptwort",
+          "id": 599
+        },
+        {
+          "name": "Unterschied",
+          "type": "Hauptwort",
+          "id": 600
+        },
+        {
+          "name": "Unterschrift",
+          "type": "Hauptwort",
+          "id": 601
+        },
+        {
+          "name": "Untersuchung",
+          "type": "Hauptwort",
+          "id": 602
+        },
+        {
+          "name": "Urlaub",
+          "type": "Hauptwort",
+          "id": 603
+        },
+        {
+          "name": "Übernachtung",
+          "type": "Hauptwort",
+          "id": 604
+        },
+        {
+          "name": "Vater",
+          "type": "Hauptwort",
+          "id": 605
+        },
+        {
+          "name": "Verbindung",
+          "type": "Hauptwort",
+          "id": 606
+        },
+        {
+          "name": "Verein",
+          "type": "Hauptwort",
+          "id": 607
+        },
+        {
+          "name": "Verkäufer",
+          "type": "Hauptwort",
+          "id": 608
+        },
+        {
+          "name": "Verkäuferin",
+          "type": "Hauptwort",
+          "id": 609
+        },
+        {
+          "name": "Verkehr",
+          "type": "Hauptwort",
+          "id": 610
+        },
+        {
+          "name": "Vermieter",
+          "type": "Hauptwort",
+          "id": 611
+        },
+        {
+          "name": "Versicherung",
+          "type": "Hauptwort",
+          "id": 612
+        },
+        {
+          "name": "Verspätung",
+          "type": "Hauptwort",
+          "id": 613
+        },
+        {
+          "name": "Vertrag",
+          "type": "Hauptwort",
+          "id": 614
+        },
+        {
+          "name": "Video",
+          "type": "Hauptwort",
+          "id": 615
+        },
+        {
+          "name": "Vogel",
+          "type": "Hauptwort",
+          "id": 616
+        },
+        {
+          "name": "Volksschule",
+          "type": "Hauptwort",
+          "id": 617
+        },
+        {
+          "name": "Vormittag",
+          "type": "Hauptwort",
+          "id": 618
+        },
+        {
+          "name": "Vorname",
+          "type": "Hauptwort",
+          "id": 619
+        },
+        {
+          "name": "Vorsicht",
+          "type": "Hauptwort",
+          "id": 620
+        },
+        {
+          "name": "Vorwahl",
+          "type": "Hauptwort",
+          "id": 621
+        },
+        {
+          "name": "Wäsche",
+          "type": "Hauptwort",
+          "id": 622
+        },
+        {
+          "name": "Wagen",
+          "type": "Hauptwort",
+          "id": 623
+        },
+        {
+          "name": "Wald",
+          "type": "Hauptwort",
+          "id": 624
+        },
+        {
+          "name": "Wasser",
+          "type": "Hauptwort",
+          "id": 625
+        },
+        {
+          "name": "Weg",
+          "type": "Hauptwort",
+          "id": 626
+        },
+        {
+          "name": "Wein",
+          "type": "Hauptwort",
+          "id": 627
+        },
+        {
+          "name": "Welt",
+          "type": "Hauptwort",
+          "id": 628
+        },
+        {
+          "name": "Werkstatt",
+          "type": "Hauptwort",
+          "id": 629
+        },
+        {
+          "name": "Werkzeug",
+          "type": "Hauptwort",
+          "id": 630
+        },
+        {
+          "name": "Westen",
+          "type": "Hauptwort",
+          "id": 631
+        },
+        {
+          "name": "Wetter",
+          "type": "Hauptwort",
+          "id": 632
+        },
+        {
+          "name": "Wiederhören",
+          "type": "Hauptwort",
+          "id": 633
+        },
+        {
+          "name": "Wiedersehen",
+          "type": "Hauptwort",
+          "id": 634
+        },
+        {
+          "name": "Wind",
+          "type": "Hauptwort",
+          "id": 635
+        },
+        {
+          "name": "Winter",
+          "type": "Hauptwort",
+          "id": 636
+        },
+        {
+          "name": "Wirtschaft",
+          "type": "Hauptwort",
+          "id": 637
+        },
+        {
+          "name": "Woche",
+          "type": "Hauptwort",
+          "id": 638
+        },
+        {
+          "name": "Wochenende",
+          "type": "Hauptwort",
+          "id": 639
+        },
+        {
+          "name": "Wochentag",
+          "type": "Hauptwort",
+          "id": 640
+        },
+        {
+          "name": "Wohnung",
+          "type": "Hauptwort",
+          "id": 641
+        },
+        {
+          "name": "Wolke",
+          "type": "Hauptwort",
+          "id": 642
+        },
+        {
+          "name": "Wort",
+          "type": "Hauptwort",
+          "id": 643
+        },
+        {
+          "name": "Wunsch",
+          "type": "Hauptwort",
+          "id": 644
+        },
+        {
+          "name": "Wurst",
+          "type": "Hauptwort",
+          "id": 645
+        },
+        {
+          "name": "Zahl",
+          "type": "Hauptwort",
+          "id": 646
+        },
+        {
+          "name": "Zahn",
+          "type": "Hauptwort",
+          "id": 647
+        },
+        {
+          "name": "Zeit",
+          "type": "Hauptwort",
+          "id": 648
+        },
+        {
+          "name": "Zeitschrift",
+          "type": "Hauptwort",
+          "id": 649
+        },
+        {
+          "name": "Zeitung",
+          "type": "Hauptwort",
+          "id": 650
+        },
+        {
+          "name": "Zentrum",
+          "type": "Hauptwort",
+          "id": 651
+        },
+        {
+          "name": "Zettel",
+          "type": "Hauptwort",
+          "id": 652
+        },
+        {
+          "name": "Zeugnis",
+          "type": "Hauptwort",
+          "id": 653
+        },
+        {
+          "name": "Zigarette",
+          "type": "Hauptwort",
+          "id": 654
+        },
+        {
+          "name": "Zimmer",
+          "type": "Hauptwort",
+          "id": 655
+        },
+        {
+          "name": "Zitrone",
+          "type": "Hauptwort",
+          "id": 656
+        },
+        {
+          "name": "Zoll",
+          "type": "Hauptwort",
+          "id": 657
+        },
+        {
+          "name": "Zucker",
+          "type": "Hauptwort",
+          "id": 658
+        },
+        {
+          "name": "Zug",
+          "type": "Hauptwort",
+          "id": 659
+        },
+        {
+          "name": "abfahren",
+          "type": "Verb",
+          "id": 660
+        },
+        {
+          "name": "aktivieren",
+          "type": "Verb",
+          "id": 661
+        },
+        {
+          "name": "anbeten",
+          "type": "Verb",
+          "id": 662
+        },
+        {
+          "name": "anhalten",
+          "type": "Verb",
+          "id": 663
+        },
+        {
+          "name": "antreffen",
+          "type": "Verb",
+          "id": 664
+        },
+        {
+          "name": "arbeiten",
+          "type": "Verb",
+          "id": 665
+        },
+        {
+          "name": "ärgern",
+          "type": "Verb",
+          "id": 666
+        },
+        {
+          "name": "aufatmen",
+          "type": "Verb",
+          "id": 667
+        },
+        {
+          "name": "austeilen",
+          "type": "Verb",
+          "id": 668
+        },
+        {
+          "name": "ausstellen",
+          "type": "Verb",
+          "id": 669
+        },
+        {
+          "name": "backen",
+          "type": "Verb",
+          "id": 670
+        },
+        {
+          "name": "baden",
+          "type": "Verb",
+          "id": 671
+        },
+        {
+          "name": "befehlen",
+          "type": "Verb",
+          "id": 672
+        },
+        {
+          "name": "beginnen",
+          "type": "Verb",
+          "id": 673
+        },
+        {
+          "name": "beißen",
+          "type": "Verb",
+          "id": 674
+        },
+        {
+          "name": "bejahen",
+          "type": "Verb",
+          "id": 675
+        },
+        {
+          "name": "belegen",
+          "type": "Verb",
+          "id": 676
+        },
+        {
+          "name": "bestimmen",
+          "type": "Verb",
+          "id": 677
+        },
+        {
+          "name": "bilden",
+          "type": "Verb",
+          "id": 678
+        },
+        {
+          "name": "bluten",
+          "type": "Verb",
+          "id": 679
+        },
+        {
+          "name": "bremsen",
+          "type": "Verb",
+          "id": 680
+        },
+        {
+          "name": "charakterisieren",
+          "type": "Verb",
+          "id": 681
+        },
+        {
+          "name": "chippen",
+          "type": "Verb",
+          "id": 682
+        },
+        {
+          "name": "codieren",
+          "type": "Verb",
+          "id": 683
+        },
+        {
+          "name": "covern",
+          "type": "Verb",
+          "id": 684
+        },
+        {
+          "name": "dableiben",
+          "type": "Verb",
+          "id": 685
+        },
+        {
+          "name": "dagegenhalten",
+          "type": "Verb",
+          "id": 686
+        },
+        {
+          "name": "dahinplätschern",
+          "type": "Verb",
+          "id": 687
+        },
+        {
+          "name": "dämmern",
+          "type": "Verb",
+          "id": 688
+        },
+        {
+          "name": "danken",
+          "type": "Verb",
+          "id": 689
+        },
+        {
+          "name": "decken",
+          "type": "Verb",
+          "id": 690
+        },
+        {
+          "name": "deklinieren",
+          "type": "Verb",
+          "id": 691
+        },
+        {
+          "name": "denken",
+          "type": "Verb",
+          "id": 692
+        },
+        {
+          "name": "deuten",
+          "type": "Verb",
+          "id": 693
+        },
+        {
+          "name": "dienen",
+          "type": "Verb",
+          "id": 694
+        },
+        {
+          "name": "dolmetschen",
+          "type": "Verb",
+          "id": 695
+        },
+        {
+          "name": "drucken",
+          "type": "Verb",
+          "id": 696
+        },
+        {
+          "name": "drücken",
+          "type": "Verb",
+          "id": 697
+        },
+        {
+          "name": "durchgeben",
+          "type": "Verb",
+          "id": 698
+        },
+        {
+          "name": "ehelichen",
+          "type": "Verb",
+          "id": 699
+        },
+        {
+          "name": "eifern",
+          "type": "Verb",
+          "id": 700
+        },
+        {
+          "name": "einbauen",
+          "type": "Verb",
+          "id": 701
+        },
+        {
+          "name": "einfallen",
+          "type": "Verb",
+          "id": 702
+        },
+        {
+          "name": "ekeln",
+          "type": "Verb",
+          "id": 703
+        },
+        {
+          "name": "emporblicken",
+          "type": "Verb",
+          "id": 704
+        },
+        {
+          "name": "entbinden",
+          "type": "Verb",
+          "id": 705
+        },
+        {
+          "name": "entriegeln",
+          "type": "Verb",
+          "id": 706
+        },
+        {
+          "name": "entwickeln",
+          "type": "Verb",
+          "id": 707
+        },
+        {
+          "name": "ergreifen",
+          "type": "Verb",
+          "id": 708
+        },
+        {
+          "name": "erziehen",
+          "type": "Verb",
+          "id": 709
+        },
+        {
+          "name": "essen",
+          "type": "Verb",
+          "id": 710
+        },
+        {
+          "name": "explodieren",
+          "type": "Verb",
+          "id": 711
+        },
+        {
+          "name": "fahren",
+          "type": "Verb",
+          "id": 712
+        },
+        {
+          "name": "fallen",
+          "type": "Verb",
+          "id": 713
+        },
+        {
+          "name": "fällen",
+          "type": "Verb",
+          "id": 714
+        },
+        {
+          "name": "fangen",
+          "type": "Verb",
+          "id": 715
+        },
+        {
+          "name": "fasten",
+          "type": "Verb",
+          "id": 716
+        },
+        {
+          "name": "feilen",
+          "type": "Verb",
+          "id": 717
+        },
+        {
+          "name": "festlegen",
+          "type": "Verb",
+          "id": 718
+        },
+        {
+          "name": "fiebern",
+          "type": "Verb",
+          "id": 719
+        },
+        {
+          "name": "fixieren",
+          "type": "Verb",
+          "id": 720
+        },
+        {
+          "name": "fließen",
+          "type": "Verb",
+          "id": 721
+        },
+        {
+          "name": "folgen",
+          "type": "Verb",
+          "id": 722
+        },
+        {
+          "name": "fördern",
+          "type": "Verb",
+          "id": 723
+        },
+        {
+          "name": "freuen",
+          "type": "Verb",
+          "id": 724
+        },
+        {
+          "name": "funken",
+          "type": "Verb",
+          "id": 725
+        },
+        {
+          "name": "gackern",
+          "type": "Verb",
+          "id": 726
+        },
+        {
+          "name": "galoppieren",
+          "type": "Verb",
+          "id": 727
+        },
+        {
+          "name": "garantieren",
+          "type": "Verb",
+          "id": 728
+        },
+        {
+          "name": "gebrauchen",
+          "type": "Verb",
+          "id": 729
+        },
+        {
+          "name": "gedenken",
+          "type": "Verb",
+          "id": 730
+        },
+        {
+          "name": "genehmigen",
+          "type": "Verb",
+          "id": 731
+        },
+        {
+          "name": "genießen",
+          "type": "Verb",
+          "id": 732
+        },
+        {
+          "name": "gleichen",
+          "type": "Verb",
+          "id": 733
+        },
+        {
+          "name": "glühen",
+          "type": "Verb",
+          "id": 734
+        },
+        {
+          "name": "garnieren",
+          "type": "Verb",
+          "id": 735
+        },
+        {
+          "name": "greifen",
+          "type": "Verb",
+          "id": 736
+        },
+        {
+          "name": "gründen",
+          "type": "Verb",
+          "id": 737
+        },
+        {
+          "name": "haben",
+          "type": "Verb",
+          "id": 738
+        },
+        {
+          "name": "hacken",
+          "type": "Verb",
+          "id": 739
+        },
+        {
+          "name": "halten",
+          "type": "Verb",
+          "id": 740
+        },
+        {
+          "name": "handeln",
+          "type": "Verb",
+          "id": 741
+        },
+        {
+          "name": "hassen",
+          "type": "Verb",
+          "id": 742
+        },
+        {
+          "name": "hauen",
+          "type": "Verb",
+          "id": 743
+        },
+        {
+          "name": "heften",
+          "type": "Verb",
+          "id": 744
+        },
+        {
+          "name": "heilen",
+          "type": "Verb",
+          "id": 745
+        },
+        {
+          "name": "herumlaufen",
+          "type": "Verb",
+          "id": 746
+        },
+        {
+          "name": "hoffen",
+          "type": "Verb",
+          "id": 747
+        },
+        {
+          "name": "honorieren",
+          "type": "Verb",
+          "id": 748
+        },
+        {
+          "name": "idealisieren",
+          "type": "Verb",
+          "id": 749
+        },
+        {
+          "name": "illuminieren",
+          "type": "Verb",
+          "id": 750
+        },
+        {
+          "name": "implizieren",
+          "type": "Verb",
+          "id": 751
+        },
+        {
+          "name": "infiltrieren",
+          "type": "Verb",
+          "id": 752
+        },
+        {
+          "name": "inserieren",
+          "type": "Verb",
+          "id": 753
+        },
+        {
+          "name": "investieren",
+          "type": "Verb",
+          "id": 754
+        },
+        {
+          "name": "irren",
+          "type": "Verb",
+          "id": 755
+        },
+        {
+          "name": "jagen",
+          "type": "Verb",
+          "id": 756
+        },
+        {
+          "name": "jammern",
+          "type": "Verb",
+          "id": 757
+        },
+        {
+          "name": "jauchzen",
+          "type": "Verb",
+          "id": 758
+        },
+        {
+          "name": "joggen",
+          "type": "Verb",
+          "id": 759
+        },
+        {
+          "name": "jubeln",
+          "type": "Verb",
+          "id": 760
+        },
+        {
+          "name": "justieren",
+          "type": "Verb",
+          "id": 761
+        },
+        {
+          "name": "kalkulieren",
+          "type": "Verb",
+          "id": 762
+        },
+        {
+          "name": "kaltmachen",
+          "type": "Verb",
+          "id": 763
+        },
+        {
+          "name": "kämmen",
+          "type": "Verb",
+          "id": 764
+        },
+        {
+          "name": "kämpfen",
+          "type": "Verb",
+          "id": 765
+        },
+        {
+          "name": "kapitulieren",
+          "type": "Verb",
+          "id": 766
+        },
+        {
+          "name": "kegeln",
+          "type": "Verb",
+          "id": 767
+        },
+        {
+          "name": "kellnern",
+          "type": "Verb",
+          "id": 768
+        },
+        {
+          "name": "kichern",
+          "type": "Verb",
+          "id": 769
+        },
+        {
+          "name": "klagen",
+          "type": "Verb",
+          "id": 770
+        },
+        {
+          "name": "klären",
+          "type": "Verb",
+          "id": 771
+        },
+        {
+          "name": "klumpen",
+          "type": "Verb",
+          "id": 772
+        },
+        {
+          "name": "knacken",
+          "type": "Verb",
+          "id": 773
+        },
+        {
+          "name": "konsumieren",
+          "type": "Verb",
+          "id": 774
+        },
+        {
+          "name": "kreisen",
+          "type": "Verb",
+          "id": 775
+        },
+        {
+          "name": "kurieren",
+          "type": "Verb",
+          "id": 776
+        },
+        {
+          "name": "labern",
+          "type": "Verb",
+          "id": 777
+        },
+        {
+          "name": "lachen",
+          "type": "Verb",
+          "id": 778
+        },
+        {
+          "name": "landen",
+          "type": "Verb",
+          "id": 779
+        },
+        {
+          "name": "lassen",
+          "type": "Verb",
+          "id": 780
+        },
+        {
+          "name": "leben",
+          "type": "Verb",
+          "id": 781
+        },
+        {
+          "name": "leeren",
+          "type": "Verb",
+          "id": 782
+        },
+        {
+          "name": "leihen",
+          "type": "Verb",
+          "id": 783
+        },
+        {
+          "name": "lenken",
+          "type": "Verb",
+          "id": 784
+        },
+        {
+          "name": "leuchten",
+          "type": "Verb",
+          "id": 785
+        },
+        {
+          "name": "liefern",
+          "type": "Verb",
+          "id": 786
+        },
+        {
+          "name": "loben",
+          "type": "Verb",
+          "id": 787
+        },
+        {
+          "name": "lohnen",
+          "type": "Verb",
+          "id": 788
+        },
+        {
+          "name": "losziehen",
+          "type": "Verb",
+          "id": 789
+        },
+        {
+          "name": "lüften",
+          "type": "Verb",
+          "id": 790
+        },
+        {
+          "name": "machen",
+          "type": "Verb",
+          "id": 791
+        },
+        {
+          "name": "malen",
+          "type": "Verb",
+          "id": 792
+        },
+        {
+          "name": "manipulieren",
+          "type": "Verb",
+          "id": 793
+        },
+        {
+          "name": "marschieren",
+          "type": "Verb",
+          "id": 794
+        },
+        {
+          "name": "mäßigen",
+          "type": "Verb",
+          "id": 795
+        },
+        {
+          "name": "messen",
+          "type": "Verb",
+          "id": 796
+        },
+        {
+          "name": "mindern",
+          "type": "Verb",
+          "id": 797
+        },
+        {
+          "name": "mischen",
+          "type": "Verb",
+          "id": 798
+        },
+        {
+          "name": "mosern",
+          "type": "Verb",
+          "id": 799
+        },
+        {
+          "name": "mühen",
+          "type": "Verb",
+          "id": 800
+        },
+        {
+          "name": "nachbereiten",
+          "type": "Verb",
+          "id": 801
+        },
+        {
+          "name": "nachgucken",
+          "type": "Verb",
+          "id": 802
+        },
+        {
+          "name": "nächtigen",
+          "type": "Verb",
+          "id": 803
+        },
+        {
+          "name": "nähen",
+          "type": "Verb",
+          "id": 804
+        },
+        {
+          "name": "nähren",
+          "type": "Verb",
+          "id": 805
+        },
+        {
+          "name": "neiden",
+          "type": "Verb",
+          "id": 806
+        },
+        {
+          "name": "nerven",
+          "type": "Verb",
+          "id": 807
+        },
+        {
+          "name": "niedermachen",
+          "type": "Verb",
+          "id": 808
+        },
+        {
+          "name": "niesen",
+          "type": "Verb",
+          "id": 809
+        },
+        {
+          "name": "normalisieren",
+          "type": "Verb",
+          "id": 810
+        },
+        {
+          "name": "nötigen",
+          "type": "Verb",
+          "id": 811
+        },
+        {
+          "name": "nutzen",
+          "type": "Verb",
+          "id": 812
+        },
+        {
+          "name": "obsiegen",
+          "type": "Verb",
+          "id": 813
+        },
+        {
+          "name": "öden",
+          "type": "Verb",
+          "id": 814
+        },
+        {
+          "name": "offenbaren",
+          "type": "Verb",
+          "id": 815
+        },
+        {
+          "name": "ökonomisieren",
+          "type": "Verb",
+          "id": 816
+        },
+        {
+          "name": "ölen",
+          "type": "Verb",
+          "id": 817
+        },
+        {
+          "name": "operieren",
+          "type": "Verb",
+          "id": 818
+        },
+        {
+          "name": "ordnen",
+          "type": "Verb",
+          "id": 819
+        },
+        {
+          "name": "orten",
+          "type": "Verb",
+          "id": 820
+        },
+        {
+          "name": "paaren",
+          "type": "Verb",
+          "id": 821
+        },
+        {
+          "name": "pachten",
+          "type": "Verb",
+          "id": 822
+        },
+        {
+          "name": "packen",
+          "type": "Verb",
+          "id": 823
+        },
+        {
+          "name": "parken",
+          "type": "Verb",
+          "id": 824
+        },
+        {
+          "name": "passen",
+          "type": "Verb",
+          "id": 825
+        },
+        {
+          "name": "pauken",
+          "type": "Verb",
+          "id": 826
+        },
+        {
+          "name": "peitschen",
+          "type": "Verb",
+          "id": 827
+        },
+        {
+          "name": "personalisieren",
+          "type": "Verb",
+          "id": 828
+        },
+        {
+          "name": "pfeifen",
+          "type": "Verb",
+          "id": 829
+        },
+        {
+          "name": "pflegen",
+          "type": "Verb",
+          "id": 830
+        },
+        {
+          "name": "picken",
+          "type": "Verb",
+          "id": 831
+        },
+        {
+          "name": "planen",
+          "type": "Verb",
+          "id": 832
+        },
+        {
+          "name": "praktizieren",
+          "type": "Verb",
+          "id": 833
+        },
+        {
+          "name": "proben",
+          "type": "Verb",
+          "id": 834
+        },
+        {
+          "name": "protokollieren",
+          "type": "Verb",
+          "id": 835
+        },
+        {
+          "name": "quadrieren",
+          "type": "Verb",
+          "id": 836
+        },
+        {
+          "name": "quaken",
+          "type": "Verb",
+          "id": 837
+        },
+        {
+          "name": "quälen",
+          "type": "Verb",
+          "id": 838
+        },
+        {
+          "name": "qualifizieren",
+          "type": "Verb",
+          "id": 839
+        },
+        {
+          "name": "qualmen",
+          "type": "Verb",
+          "id": 840
+        },
+        {
+          "name": "quatschen",
+          "type": "Verb",
+          "id": 841
+        },
+        {
+          "name": "quengeln",
+          "type": "Verb",
+          "id": 842
+        },
+        {
+          "name": "querlegen",
+          "type": "Verb",
+          "id": 843
+        },
+        {
+          "name": "quietschen",
+          "type": "Verb",
+          "id": 844
+        },
+        {
+          "name": "quittieren",
+          "type": "Verb",
+          "id": 845
+        },
+        {
+          "name": "radieren",
+          "type": "Verb",
+          "id": 846
+        },
+        {
+          "name": "rahmen",
+          "type": "Verb",
+          "id": 847
+        },
+        {
+          "name": "rangieren",
+          "type": "Verb",
+          "id": 848
+        },
+        {
+          "name": "ranken",
+          "type": "Verb",
+          "id": 849
+        },
+        {
+          "name": "rankommen",
+          "type": "Verb",
+          "id": 850
+        },
+        {
+          "name": "raten",
+          "type": "Verb",
+          "id": 851
+        },
+        {
+          "name": "räumen",
+          "type": "Verb",
+          "id": 852
+        },
+        {
+          "name": "rechnen",
+          "type": "Verb",
+          "id": 853
+        },
+        {
+          "name": "reden",
+          "type": "Verb",
+          "id": 854
+        },
+        {
+          "name": "regeln",
+          "type": "Verb",
+          "id": 855
+        },
+        {
+          "name": "reichen",
+          "type": "Verb",
+          "id": 856
+        },
+        {
+          "name": "reinigen",
+          "type": "Verb",
+          "id": 857
+        },
+        {
+          "name": "reparieren",
+          "type": "Verb",
+          "id": 858
+        },
+        {
+          "name": "respektieren",
+          "type": "Verb",
+          "id": 859
+        },
+        {
+          "name": "rinnen",
+          "type": "Verb",
+          "id": 860
+        },
+        {
+          "name": "rollen",
+          "type": "Verb",
+          "id": 861
+        },
+        {
+          "name": "rosten",
+          "type": "Verb",
+          "id": 862
+        },
+        {
+          "name": "rückkehren",
+          "type": "Verb",
+          "id": 863
+        },
+        {
+          "name": "ruhen",
+          "type": "Verb",
+          "id": 864
+        },
+        {
+          "name": "rutschen",
+          "type": "Verb",
+          "id": 865
+        },
+        {
+          "name": "sabbern",
+          "type": "Verb",
+          "id": 866
+        },
+        {
+          "name": "sagen",
+          "type": "Verb",
+          "id": 867
+        },
+        {
+          "name": "sägen",
+          "type": "Verb",
+          "id": 868
+        },
+        {
+          "name": "salzen",
+          "type": "Verb",
+          "id": 869
+        },
+        {
+          "name": "saugen",
+          "type": "Verb",
+          "id": 870
+        },
+        {
+          "name": "schaben",
+          "type": "Verb",
+          "id": 871
+        },
+        {
+          "name": "schenken",
+          "type": "Verb",
+          "id": 872
+        },
+        {
+          "name": "schießen",
+          "type": "Verb",
+          "id": 873
+        },
+        {
+          "name": "schlemmen",
+          "type": "Verb",
+          "id": 874
+        },
+        {
+          "name": "schlingern",
+          "type": "Verb",
+          "id": 875
+        },
+        {
+          "name": "schnappen",
+          "type": "Verb",
+          "id": 876
+        },
+        {
+          "name": "schnitzen",
+          "type": "Verb",
+          "id": 877
+        },
+        {
+          "name": "schwärzen",
+          "type": "Verb",
+          "id": 878
+        },
+        {
+          "name": "sehen",
+          "type": "Verb",
+          "id": 879
+        },
+        {
+          "name": "setzen",
+          "type": "Verb",
+          "id": 880
+        },
+        {
+          "name": "sichern",
+          "type": "Verb",
+          "id": 881
+        },
+        {
+          "name": "sprechen",
+          "type": "Verb",
+          "id": 882
+        },
+        {
+          "name": "stehen",
+          "type": "Verb",
+          "id": 883
+        },
+        {
+          "name": "strömen",
+          "type": "Verb",
+          "id": 884
+        },
+        {
+          "name": "studieren",
+          "type": "Verb",
+          "id": 885
+        },
+        {
+          "name": "tafeln",
+          "type": "Verb",
+          "id": 886
+        },
+        {
+          "name": "tagen",
+          "type": "Verb",
+          "id": 887
+        },
+        {
+          "name": "tanken",
+          "type": "Verb",
+          "id": 888
+        },
+        {
+          "name": "tauschen",
+          "type": "Verb",
+          "id": 889
+        },
+        {
+          "name": "teilen",
+          "type": "Verb",
+          "id": 890
+        },
+        {
+          "name": "telefonieren",
+          "type": "Verb",
+          "id": 891
+        },
+        {
+          "name": "testen",
+          "type": "Verb",
+          "id": 892
+        },
+        {
+          "name": "tieferlegen",
+          "type": "Verb",
+          "id": 893
+        },
+        {
+          "name": "tippen",
+          "type": "Verb",
+          "id": 894
+        },
+        {
+          "name": "töten",
+          "type": "Verb",
+          "id": 895
+        },
+        {
+          "name": "träumen",
+          "type": "Verb",
+          "id": 896
+        },
+        {
+          "name": "trinken",
+          "type": "Verb",
+          "id": 897
+        },
+        {
+          "name": "twittern",
+          "type": "Verb",
+          "id": 898
+        },
+        {
+          "name": "üben",
+          "type": "Verb",
+          "id": 899
+        },
+        {
+          "name": "überanstrengen",
+          "type": "Verb",
+          "id": 900
+        },
+        {
+          "name": "überbacken",
+          "type": "Verb",
+          "id": 901
+        },
+        {
+          "name": "umändern",
+          "type": "Verb",
+          "id": 902
+        },
+        {
+          "name": "umhören",
+          "type": "Verb",
+          "id": 903
+        },
+        {
+          "name": "unterbrechen",
+          "type": "Verb",
+          "id": 904
+        },
+        {
+          "name": "unternehmen",
+          "type": "Verb",
+          "id": 905
+        },
+        {
+          "name": "urteilen",
+          "type": "Verb",
+          "id": 906
+        },
+        {
+          "name": "vakuumieren",
+          "type": "Verb",
+          "id": 907
+        },
+        {
+          "name": "variieren",
+          "type": "Verb",
+          "id": 908
+        },
+        {
+          "name": "verabreden",
+          "type": "Verb",
+          "id": 909
+        },
+        {
+          "name": "verallgemeinern",
+          "type": "Verb",
+          "id": 910
+        },
+        {
+          "name": "verbinden",
+          "type": "Verb",
+          "id": 911
+        },
+        {
+          "name": "verderben",
+          "type": "Verb",
+          "id": 912
+        },
+        {
+          "name": "vergeben",
+          "type": "Verb",
+          "id": 913
+        },
+        {
+          "name": "verlangen",
+          "type": "Verb",
+          "id": 914
+        },
+        {
+          "name": "vertragen",
+          "type": "Verb",
+          "id": 915
+        },
+        {
+          "name": "vierteln",
+          "type": "Verb",
+          "id": 916
+        },
+        {
+          "name": "vollziehen",
+          "type": "Verb",
+          "id": 917
+        },
+        {
+          "name": "vorangehen",
+          "type": "Verb",
+          "id": 918
+        },
+        {
+          "name": "vorausahnen",
+          "type": "Verb",
+          "id": 919
+        },
+        {
+          "name": "vorbringen",
+          "type": "Verb",
+          "id": 920
+        },
+        {
+          "name": "voten",
+          "type": "Verb",
+          "id": 921
+        },
+        {
+          "name": "wachen",
+          "type": "Verb",
+          "id": 922
+        },
+        {
+          "name": "wagen",
+          "type": "Verb",
+          "id": 923
+        },
+        {
+          "name": "wählen",
+          "type": "Verb",
+          "id": 924
+        },
+        {
+          "name": "wahren",
+          "type": "Verb",
+          "id": 925
+        },
+        {
+          "name": "wallfahren",
+          "type": "Verb",
+          "id": 926
+        },
+        {
+          "name": "wandern",
+          "type": "Verb",
+          "id": 927
+        },
+        {
+          "name": "wärmen",
+          "type": "Verb",
+          "id": 928
+        },
+        {
+          "name": "wässern",
+          "type": "Verb",
+          "id": 929
+        },
+        {
+          "name": "weggehen",
+          "type": "Verb",
+          "id": 930
+        },
+        {
+          "name": "weichen",
+          "type": "Verb",
+          "id": 931
+        },
+        {
+          "name": "weitermachen",
+          "type": "Verb",
+          "id": 932
+        },
+        {
+          "name": "werben",
+          "type": "Verb",
+          "id": 933
+        },
+        {
+          "name": "wertschätzen",
+          "type": "Verb",
+          "id": 934
+        },
+        {
+          "name": "wichteln",
+          "type": "Verb",
+          "id": 935
+        },
+        {
+          "name": "widersprechen",
+          "type": "Verb",
+          "id": 936
+        },
+        {
+          "name": "wiederholen",
+          "type": "Verb",
+          "id": 937
+        },
+        {
+          "name": "wollen",
+          "type": "Verb",
+          "id": 938
+        },
+        {
+          "name": "wurzeln",
+          "type": "Verb",
+          "id": 939
+        },
+        {
+          "name": "zahlen",
+          "type": "Verb",
+          "id": 940
+        },
+        {
+          "name": "zahnen",
+          "type": "Verb",
+          "id": 941
+        },
+        {
+          "name": "zappeln",
+          "type": "Verb",
+          "id": 942
+        },
+        {
+          "name": "zaubern",
+          "type": "Verb",
+          "id": 943
+        },
+        {
+          "name": "zeichnen",
+          "type": "Verb",
+          "id": 944
+        },
+        {
+          "name": "zelten",
+          "type": "Verb",
+          "id": 945
+        },
+        {
+          "name": "zerdrücken",
+          "type": "Verb",
+          "id": 946
+        },
+        {
+          "name": "zeugen",
+          "type": "Verb",
+          "id": 947
+        },
+        {
+          "name": "ziehen",
+          "type": "Verb",
+          "id": 948
+        },
+        {
+          "name": "zieren",
+          "type": "Verb",
+          "id": 949
+        },
+        {
+          "name": "zischen",
+          "type": "Verb",
+          "id": 950
+        },
+        {
+          "name": "zivilisieren",
+          "type": "Verb",
+          "id": 951
+        },
+        {
+          "name": "zubereiten",
+          "type": "Verb",
+          "id": 952
+        },
+        {
+          "name": "zucken",
+          "type": "Verb",
+          "id": 953
+        },
+        {
+          "name": "zudecken",
+          "type": "Verb",
+          "id": 954
+        },
+        {
+          "name": "zurückweichen",
+          "type": "Verb",
+          "id": 955
+        },
+        {
+          "name": "zusammenleben",
+          "type": "Verb",
+          "id": 956
+        },
+        {
+          "name": "zustoßen",
+          "type": "Verb",
+          "id": 957
+        },
+        {
+          "name": "zwingen",
+          "type": "Verb",
+          "id": 958
+        }
+      ]
+

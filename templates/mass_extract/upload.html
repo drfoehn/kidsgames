@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+{% block title %}Upload PDF{% endblock %}
+{% block content %}
+
+<h2>PDF hochladen</h2>
+
+<div class="mb-3">
+    Hier den Sciex Instrument Tuning Report hochladen
+</div>
+
+<form id="upload-form" enctype="multipart/form-data">
+    <div class="mb-3">
+        <input class="form-control form-control-lg" id="formFileLg" type="file" name="file" accept=".pdf" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Datei laden und verarbeiten</button>
+</form>
+
+<div id="result-table" class="mt-4">
+    <!-- The generated table will be inserted here -->
+    {{ table_html | safe }}  <!-- Ensure this is included to render HTML -->
+</div>
+
+<!-- Button to copy the last row -->
+<button id="copy-button" class="btn btn-primary" style="display: none;" onclick="copyLastRow()">Copy Last Row</button>
+<p id="copy-message" style="color: green;"></p>
+
+<script>
+document.getElementById('upload-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    var formData = new FormData(this);
+
+    fetch('{{ url_for("mass_extract.upload_file") }}', {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.error) {
+            alert(data.error);
+        } else {
+            document.getElementById('result-table').innerHTML = data.table_html;
+            document.getElementById('copy-button').style.display = 'inline'; // Show the copy button
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert('An error occurred while processing the file.');
+    });
+});
+
+function copyLastRow() {
+    const table = document.getElementById('data-table');
+    const lastRow = table.rows[table.rows.length - 1];
+    let rowData = [];
+    
+    for (let i = 0; i < lastRow.cells.length; i++) {
+        rowData.push(lastRow.cells[i].innerText); // Collect cell values
+    }
+    
+    // Join the cell values with tabs for Excel compatibility
+    const formattedData = rowData.join('\t');
+    
+    navigator.clipboard.writeText(formattedData).then(() => {
+        document.getElementById('copy-message').innerText = 'Erfolgreich in den Zwischenspeicher gelegt';
+    }).catch(err => {
+        console.error('Error copying text: ', err);
+    });
+}
+</script>
+
+{% endblock %}

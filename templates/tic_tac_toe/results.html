@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %}Spielende{% endblock %}
+
+{% block content %}
+<div class="container text-center">
+    {% if match_winner %}
+        <h1>Match beendet!</h1>
+        <div class="alert alert-success">
+            <h2>Spieler {{ match_winner }} gewinnt das Match!</h2>
+            <p>Endstand: X {{ game.scores['X'] }} - {{ game.scores['O'] }} O</p>
+        </div>
+        <div class="mt-4">
+            <a href="{{ url_for('tic_tac_toe.index') }}" class="btn btn-primary">Neues Spiel</a>
+        </div>
+    {% else %}
+        <h2>Runde {{ game.games_played }} beendet!</h2>
+        <div class="alert alert-info">
+            <p>Zwischenstand: X {{ game.scores['X'] }} - {{ game.scores['O'] }} O</p>
+        </div>
+        <div class="mt-4">
+            <a href="{{ url_for('tic_tac_toe.next_round', room_code=room_code) }}" class="btn btn-primary">Nächste Runde</a>
+        </div>
+    {% endif %}
+</div>
+{% endblock %} 

@@ -1,0 +1,30 @@
+<nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="{{ url_for('index') }}">
+            <img src="{{ url_for('static', filename='img/logo.png') }}" width=70px alt="Logo">
+      </a>
+    
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('index') }}"><i class="bi bi-house"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('picdamuro') }}"><i class="bi bi-pencil"></i> Picdamuro</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('prisoners_dilemma.index') }}"><i class="bi bi-hammer"></i> Prisoners Dilemma</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('cadanames') }}"><i class="bi bi-search"></i> Cadanames</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('tic_tac_toe.index') }}"><i class="bi bi-border-all"></i> Tic-Tac-Toe<sup>2</sup></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>

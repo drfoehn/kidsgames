@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}Runden Ergebnis{% endblock %}
+
+{% block header %}
+<h1 class="text-center">Runden Ergebnis</h1>
+{% endblock %}
+
+{% block content %}
+<div class="text-center">
+    <p>Deine Wahl: {{ game.choices[player_id] }}</p>
+    <p>Wahl des anderen Spielers: {{ game.choices[1 - player_id] }}</p>
+    <p>Dein aktueller Punktestand: {{ game.scores[player_id] }}</p>
+    <a href="{{ url_for('prisoners_dilemma.play', room_code=room_code) }}" class="btn btn-primary">Nächste Runde</a>
+</div>
+{% endblock %}
+

@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}Janne's Apps{% endblock %}
+
+{% block content %}
+<div class="error-container">
+    <h1>500 - Internal Server Error</h1>
+    <div class="error-content">
+        <p>Oops! Something went wrong. </p>
+        <p>It seems that the server is experiencing issues. Please try again later.</p>
+        <div class="error-actions">
+            <a href="{{ url_for('index') }}" class="btn btn-primary">Return to Homepage</a>
+        </div>
+    </div>
+</div>
+{% endblock %}

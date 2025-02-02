@@ -1,0 +1,259 @@
+{% extends "base.html" %}
+
+{% block title %}Tic-Tac-Toe<sup>2</sup>{% endblock %}
+
+{% block content %}
+<div class="container py-4">
+    <div class="text-center">
+        <div class="card shadow-sm mb-4">
+            <div class="card-body">
+                <h2 class="card-title">Raum: <span class="badge bg-secondary">{{ room_code }}</span></h2>
+                <h3 class="card-subtitle mb-3">
+                    Du bist 
+                    <span class="badge {% if player_index == 0 %}bg-primary{% else %}bg-danger{% endif %}">
+                        {{ session.player_name }}
+                        ({{ 'X' if player_index == 0 else 'O' }})
+                    </span>
+                </h3>
+            </div>
+        </div>
+
+        <!-- Neue Spielstandsanzeige -->
+        <div class="card shadow-sm mb-4">
+            <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="text-primary">
+                        <strong>{{ game.player_names['X'] }}</strong>
+                        <div class="badge bg-primary">{{ game.scores['X'] }}</div>
+                    </div>
+                    <div>
+                        <h4 class="mb-0">Runde {{ game.games_played + 1 }} von 5</h4>
+                        <small class="text-muted">Best of 5</small>
+                    </div>
+                    <div class="text-danger">
+                        <strong>{{ game.player_names['O'] }}</strong>
+                        <div class="badge bg-danger">{{ game.scores['O'] }}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="game-board-container">
+            <div class="game-board shadow">
+                {% for i in range(9) %}
+                    {% if i % 3 == 0 %}<div class="board-row">{% endif %}
+                    <div class="board-cell {% if game.current_player == player_index %}hoverable{% endif %}" 
+                         id="cell-{{ i }}"
+                         data-position="{{ i }}"
+                         {% if game.board[i] %}data-symbol="{{ game.board[i] }}"{% endif %}
+                         {% if game.current_player == player_index %}onclick="makeMove({{ i }})"{% endif %}>
+                        {{ game.board[i] if game.board[i] else '' }}
+                    </div>
+                    {% if (i + 1) % 3 == 0 %}</div>{% endif %}
+                {% endfor %}
+            </div>
+        </div>
+
+        <div class="game-status mt-4">
+            <div class="alert {% if game.current_player == player_index %}alert-primary{% else %}alert-secondary{% endif %} shadow-sm">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        {% if not game.game_started %}
+                            <div class="d-flex align-items-center">
+                                <div class="spinner-border spinner-border-sm me-2" role="status">
+                                    <span class="visually-hidden">Loading...</span>
+                                </div>
+                                Warte auf zweiten Spieler...
+                            </div>
+                        {% elif game.current_player == player_index %}
+                            {% if game.phase == 'place' %}
+                                {% if game.stones['X' if player_index == 0 else 'O']|length < 3 %}
+                                    <i class="bi bi-plus-circle"></i> Platziere einen Stein
+                                {% else %}
+                                    <i class="bi bi-hand-index"></i> Wähle einen deiner Steine zum Verschieben
+                                {% endif %}
+                            {% else %}
+                                <i class="bi bi-arrow-right-circle"></i> Wähle das Zielfeld für deinen Stein
+                            {% endif %}
+                        {% else %}
+                            <div class="d-flex align-items-center">
+                                <div class="spinner-border spinner-border-sm me-2" role="status">
+                                    <span class="visually-hidden">Loading...</span>
+                                </div>
+                                Warte auf den anderen Spieler...
+                            </div>
+                        {% endif %}
+                    </div>
+                    {% if game.game_started %}
+                        <div id="timer" class="badge bg-warning">7s</div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+
+        <div class="timeout-warning mt-2 text-muted">
+            <small>
+                <i class="bi bi-clock"></i>
+                Inaktives Spiel wird nach 2 Minuten beendet
+            </small>
+        </div>
+    </div>
+</div>
+
+<style>
+.game-board-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.game-board {
+    display: inline-block;
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.board-row {
+    display: flex;
+}
+
+.board-cell {
+    width: 80px;
+    height: 80px;
+    border: 2px solid #dee2e6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    font-weight: bold;
+    cursor: default;
+    background-color: white;
+    transition: all 0.3s ease;
+    margin: 2px;
+    border-radius: 5px;
+}
+
+.board-cell.hoverable {
+    cursor: pointer;
+}
+
+.board-cell.hoverable:hover {
+    background-color: #f8f9fa;
+    transform: scale(1.05);
+}
+
+.board-cell[data-symbol="X"] {
+    color: #0d6efd;
+}
+
+.board-cell[data-symbol="O"] {
+    color: #dc3545;
+}
+
+.board-cell[data-selected="true"] {
+    background-color: #e9ecef;
+    transform: scale(0.95);
+}
+
+@media (max-width: 576px) {
+    .board-cell {
+        width: 60px;
+        height: 60px;
+        font-size: 1.5em;
+    }
+}
+</style>
+
+{% endblock %}
+
+{% block scripts %}
+<script>
+let lastBoardState = {{ game.board|tojson }};
+
+function makeMove(position) {
+    fetch("{{ url_for('tic_tac_toe.make_move') }}", {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+            position: position,
+            room_code: "{{ room_code }}"
+        })
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            if (data.winner) {
+                // Zeige Gewinnposition für 3 Sekunden
+                setTimeout(() => {
+                    if (data.match_complete) {
+                        window.location.href = "{{ url_for('tic_tac_toe.results', room_code=room_code) }}";
+                    } else {
+                        window.location.href = "{{ url_for('tic_tac_toe.next_round', room_code=room_code) }}";
+                    }
+                }, 3000);
+            } else {
+                location.reload();
+            }
+        } else {
+            alert(data.message);
+        }
+    });
+}
+
+function updateBoard() {
+    fetch("{{ url_for('tic_tac_toe.get_state', room_code=room_code) }}")
+        .then(response => response.json())
+        .then(data => {
+            if (data.error === "game_timeout") {
+                alert("Das Spiel wurde wegen Inaktivität beendet.");
+                window.location.href = "{{ url_for('tic_tac_toe.index') }}";
+                return;
+            }
+            
+            if (data.timeout) {
+                if (data.match_complete) {
+                    window.location.href = "{{ url_for('tic_tac_toe.results', room_code=room_code) }}";
+                } else {
+                    const winnerName = data.winner === 'X' ? 
+                        "{{ game.player_names['X'] }}" : 
+                        "{{ game.player_names['O'] }}";
+                    alert(`Zeit abgelaufen! ${winnerName} gewinnt diese Runde!`);
+                    window.location.href = "{{ url_for('tic_tac_toe.next_round', room_code=room_code) }}";
+                }
+                return;
+            }
+            
+            // Timer aktualisieren
+            const timer = document.getElementById('timer');
+            if (data.remaining_time) {
+                const seconds = Math.max(0, Math.ceil(data.remaining_time));
+                timer.textContent = `${seconds}s`;
+                timer.className = `badge ${seconds <= 3 ? 'bg-danger' : 'bg-warning'}`;
+            }
+            
+            if (data.board) {
+                let boardChanged = false;
+                for (let i = 0; i < 9; i++) {
+                    const cell = document.getElementById(`cell-${i}`);
+                    if (data.board[i] !== lastBoardState[i]) {
+                        boardChanged = true;
+                        cell.textContent = data.board[i] || '';
+                        cell.dataset.symbol = data.board[i] || '';
+                    }
+                }
+                if (boardChanged) {
+                    lastBoardState = data.board;
+                    location.reload();
+                }
+            }
+        });
+}
+
+// Periodisch nach Updates prüfen
+setInterval(updateBoard, 1000);
+</script>
+{% endblock %} 

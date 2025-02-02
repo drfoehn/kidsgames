@@ -1,0 +1,327 @@
+{% extends "base.html" %}
+
+{% block title %}Janne's GamingApps{% endblock %}
+
+{% block header %}
+<h1 class="text-center">Willkommen bei JC Games</h1>
+{% endblock %}
+
+{% block content %}
+<h1>Damit den Kindern nicht fad ist ...</h1>
+<div>&copy; Janne Cadamuro</div>
+<p></p>
+
+
+<div class="container">
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+
+
+
+        <div class="col">
+          <div class="card">
+              <img src="{{ url_for('static', filename='img/picdamuro.webp') }}" class="card-img-top" alt="picdamuro">
+              <div class="card-body">
+                <h5 class="card-title">Picdamuro</h5>
+                <p class="card-text">Ein Spiel bei dem du versuchen musst, das was dir dein Teammitglied zeichnet, zu erraten.</p>
+                
+                              <!-- Button trigger modal -->
+                              <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#instruction_picdamuro">
+                                Spielanleitung
+                              </button>
+          
+                              <!-- Modal -->
+                              <div class="modal fade" id="instruction_picdamuro" tabindex="-1" aria-labelledby="instruction_picdamuro" aria-hidden="true">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title" id="instruction_picdamuro">Spielanleitung Picdamuro</h5>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <h1>Übersicht</h1>
+                                        <p>PICDAMURO ist ein interaktives Wortgenerationsspiel, das darauf abzielt, den Wortschatz und die Sprachfähigkeiten zu verbessern. Die Spieler können Wörter basierend auf verschiedenen Kategorien und Schwierigkeitsgraden auswählen, was es für verschiedene Altersgruppen und Lernstufen geeignet macht. Das Spiel integriert ein unterhaltsames und wettbewerbsfähiges Element, bei dem die Spieler Wörter zeichnen und gegeneinander antreten können.</p>
+
+                                        <h2>Funktionen</h2>
+                                        <ul>
+                                            <li><strong>Wortkategorien:</strong> Wählen Sie aus verschiedenen Kategorien wie Nomen, Verben und mehr.</li>
+                                            <li><strong>Schwierigkeitsgrade:</strong> Wählen Sie den Schwierigkeitsgrad der Wörter, um dem Fähigkeitsniveau des Spielers gerecht zu werden.</li>
+                                            <li><strong>Countdown-Timer:</strong> Nehmen Sie an zeitlich begrenzten Herausforderungen teil, um schnelles Denken und Erinnern zu fördern.</li>
+                                            <li><strong>Benutzerfreundliche Oberfläche:</strong> Einfaches und intuitives Design für eine einfache Navigation.</li>
+                                            <li><strong>Mehrspielermodus:</strong> Treten Sie gegen andere Spieler auf unterhaltsame und ansprechende Weise an.</li>
+                                        </ul>
+
+                                        <h2>Spielregeln</h2>
+
+                                        <h3>Ziel</h3>
+                                        <p>Das Ziel des Spiels ist es, Wörter korrekt zu identifizieren und zu zeichnen, basierend auf der Kategorie und den Regeln, die mit der Farbe des Feldes verbunden sind, auf dem Sie sich befinden.</p>
+
+                                        <h3>Spielanleitung</h3>
+                                        <p><strong>Herunterladbares Spielbrett:</strong> Ein Spielbrett (Spielplan) kannst du <a href="{{ url_for('download_file', filename='Spielplan_Picdamuro.pdf') }}" target="_blank">hier herunterladen</a>.</p>
+
+                                        <h4>Spielstart:</h4>
+                                        <ul>
+                                            <li>Gespielt in Gruppen mit mindestens 2 Spielern pro Gruppe.</li>
+                                            <li>Innerhalb der Gruppe wechseln sich die Spieler ab – einer zeichnet, während die anderen raten.</li>
+                                            <li>Öffnen Sie die Picdamuro-Mobile-App lokal, indem Sie die index.html öffnen, oder stellen Sie sie auf Ihren Server und starten Sie sie von dort.</li>
+                                            <li>Wählen Sie einen Worttyp.</li>
+                                        </ul>
+
+                                        <h4>Feldfarben und Aktionen:</h4>
+
+                                        <ul>
+                                            <li><strong>Rotes Feld:</strong>
+                                                <ul>
+                                                    <li>Wenn Sie auf einem roten Feld landen, muss ein Verb gewählt werden.</li>
+                                                    <li>(Kinder können auch ein Substantiv wählen, wenn sie auf einem blauen Feld landen.)</li>
+                                                    <li>Klicken Sie auf "Neuer Begriff".</li>
+                                                    <li>Wenn der Begriff unbekannt ist, können Sie einen neuen Begriff wählen.</li>
+                                                </ul>
+                                            </li>
+
+                                            <li><strong>Blaues Feld:</strong>
+                                                <ul>
+                                                    <li>Wenn Sie auf einem blauen Feld landen, muss ein Substantiv gewählt werden.</li>
+                                                    <li>Klicken Sie auf "Neuer Begriff".</li>
+                                                    <li>Wenn der Begriff unbekannt ist, können Sie einen neuen Begriff wählen.</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+
+                                        <h4>Zeichenphase:</h4>
+                                        <ul>
+                                            <li>Jetzt ist es Zeit zu zeichnen!</li>
+                                            <li>Die anderen in der Gruppe dürfen den Begriff nicht sehen.</li>
+                                            <li>Sind Sie bereit? Dann drücken Sie "Start" und legen Sie das Telefon mit der Bildschirmseite nach oben.</li>
+                                            <li>Sie haben eine Minute.</li>
+                                            <li>Der Countdown beginnt, sobald Sie auf Start drücken. Sie haben 1 Minute Zeit zum Zeichnen.</li>
+                                            <li>Die Kategorie des ausgewählten Wortes wird während der Zeichenphase angezeigt.</li>
+                                            <li>Es dürfen keine Zahlen oder Buchstaben gezeichnet werden.</li>
+                                            <li>Sie dürfen nicht sprechen oder durch Pantomime Hinweise geben.</li>
+                                            <li>Wenn Sie den Begriff erraten, bevor die Minute um ist, drücken Sie "Fertig".</li>
+                                        </ul>
+
+                                        <h4>Würfeln:</h4>
+                                        <ul>
+                                            <li>Ein Würfel erscheint mit einem maximalen Wert von 4.</li>
+                                            <li>Drücken Sie den Würfel und ziehen Sie vorwärts.</li>
+                                            <li>Egal, ob Sie den Begriff erraten haben oder nicht, es ist jetzt die nächste Gruppe an der Reihe.</li>
+                                        </ul>
+
+                                        <h4>Gelbes Feld:</h4>
+                                        <ul>
+                                            <li>Wenn Sie auf einem gelben Feld landen, zeichnen alle Gruppen gleichzeitig.</li>
+                                            <li>Die erste Gruppe, die den Begriff errät, darf würfeln und weitermachen.</li>
+                                            <li>Gelbe Felder sind nur einmal gültig für das gleichzeitige Zeichnen. Wenn Sie beim zweiten Mal immer noch auf demselben gelben Feld sind (d.h. Sie sich nicht bewegt haben), wählen Sie gelb (Egal), wenn Sie ein Wort wählen, aber nur Ihre Gruppe darf zeichnen.</li>
+                                        </ul>
+
+                                        <h4>Endfeld:</h4>
+                                        <ul>
+                                            <li>Das letzte Feld ist ebenfalls gelb, aber die Regeln ändern sich.</li>
+                                            <li>Sie müssen jedes Mal gegen alle anderen Gruppen spielen, bis Sie gewinnen.</li>
+                                            <li>Das bedeutet, dass Sie jedes Mal, wenn Sie auf diesem Feld landen, mit allen anderen Spielern um das richtige Wort konkurrieren müssen.</li>
+                                            <li>Wer diese letzte Hürde meistert, gewinnt!</li>
+                                          
+                                        </ul>
+                                        <h3>Viel Spaß!</h3>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Schließen</button>
+                                      <a href="{{ url_for('picdamuro') }}" class="btn btn-primary">Zum Spiel</a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                
+                <a href="{{ url_for('picdamuro') }}" class="btn btn-primary">Spielen</a>
+              </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+              <img src="{{ url_for('static', filename='img/cadanames.webp') }}" class="card-img-top" alt="Cadanames">
+              <div class="card-body">
+                <h5 class="card-title">Cadanames</h5>
+                <p class="card-text">Ein Spiel bei dem du versuchen musst, die Begriffe auf den Tafeln dem Überbegriff, den dir dein Teammitglied vorgibt, richtig zuzuordnen.</p>
+                
+                                    <!-- Button trigger modal -->
+                      <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#instruction_cadanames">
+                        Spielanleitung
+                      </button>
+
+                      <!-- Modal -->
+                      <div class="modal fade" id="instruction_cadanames" tabindex="-1" aria-labelledby="instruction_cadanames" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="instruction_cadanames">Spielanleitung Cadanames</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              ...
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Schließen</button>
+                              <a href="{{ url_for('cadanames') }}" class="btn btn-primary">Zum Spiel</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                
+                <a href="{{ url_for('cadanames') }}" class="btn btn-primary">Spielen</a>
+              </div>
+          </div>
+        </div>
+
+      
+        <div class="col">
+          <div class="card">
+            <img src="{{ url_for('static', filename='img/prisoners_dilemma.webp') }}" class="card-img-top" alt="Gefangenendilemma">
+            <div class="card-body">
+              <h5 class="card-title">Gefangenen-Dilemma</h5>
+              <p class="card-text">Ein Spiel über Vertrauen und Verrat. Wirst du kooperieren oder Deinen Partner verraten?</p>
+
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#instruction_prisoners_dilemma">
+                              Spielanleitung
+                            </button>
+        
+                            <!-- Modal -->
+                            <div class="modal fade" id="instruction_prisoners_dilemma" tabindex="-1" aria-labelledby="instruction_prisoners_dilemma" aria-hidden="true">
+                              <div class="modal-dialog">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h5 class="modal-title" id="instruction_prisoners_dilemma">Spielanleitung Gefangenen-Dilemma</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body">
+                                    <h6>Hintergrund:</h6>
+                  <p>Es gibt zwei Spieler im Spiel, Pimpleback Jim und Pimpleback Jims Freundin Babyface Kate.</br> 
+                    Sie planten gemeinsam einen Coup, bei dem sie ein Rollstuhlgeschäft ausrauben wollten, bewaffnet mit jeweils nur einem Löffel. </br> 
+                    Gerade als sie einen mittelpreisigen Stuhl erfolgreich geraubt hatten, traf die Polizei ein. </br> 
+                    Auf dem Revier werden sie in getrennten Räumen verhört und beiden wird die gleiche Frage gestellt: </p>
+                    <p>„Wer hat das Verbrechen begangen? Sie oder Ihr Kollege?“ </p>
+                    <p>Nun stehen sie jeweils vor einer Wahl: </br> 
+                    a) Sie können entweder ihren Freund verraten, um ihre eigene Haut zu retten, oder </br> 
+                    b) sie können schweigen, denn Snitches get Stiches</p>
+                  
+                  <h6>Entscheidungen:</h6>
+                  <ul>
+                    <li><strong>Schweigen</strong>: Wenn beide Spieler sich dafür entscheiden, zu schweigen, erhalten sie jeweils 1 Jahr Gefängnis.</li>
+                    <li><strong>Verraten</strong>: Wenn beide Spieler sich dafür entscheiden, den anderen zu verraten, erhalten sie jeweils 2 Jahre Gefängnis.</li>
+                    <li><strong>Gemischte Entscheidungen</strong>: Wenn ein Spieler schweigt, während der andere verrät, kommt der Verräter frei, während der Loyale 3 Jahre Gefängnis erhält.</li>
+                  </ul>
+                  
+                  <h6>Runden:</h6>
+                  <p>Das Spiel besteht aus einer vorgegebenen Anzahl von Runden (zwischen 5 und 15). Nach jeder Runde können die Spieler die Ergebnisse ihrer Entscheidungen und die aktualisierten Punktzahlen einsehen.</p>
+                  
+                  <h6>Ziel des Spiels:</h6>
+                  <p><strong>Primäres Ziel:</strong> Es gibt eine Obergrenze an zu verbüßenden Jahren. Wenn diese Obergrenze überschritten wird, egal von wem, endet das Spiel und beide Spieler haben verloren.</p>
+                  <p>Sollte das primäre Ziel erreicht worden sein, so gibt es ein </br>
+                    <strong>Sekundäres Ziel:</strong> Der Spieler mit der niedrigsten Zahl an zu verbüßenden Jahren am Ende aller Runden wird zum Gewinner erklärt.</p>
+                <hr>
+
+                  <h5>Wie wird gespielt:</h5>
+                  <h6>Raum erstellen:</h6>
+                  Klicke auf die Schaltfläche "Raum erstellen", um einen neuen Spielraum mit einem eindeutigen Code zu erstellen.</p>
+                  <h6>Einem Raum beitreten:</h6>
+                  Wenn dein Partner den Raum bereits erstellt hat, gib den Raumcode ein, um an einem bestehenden Spiel teilzunehmen.</p>
+                  <h6>Triff Deine Wahl:</h6>
+                  Sobald Du im Spiel bist, kannst Du dich für Schweigen oder Verrat entscheiden, indem Du auf die entsprechenden Schaltflächen klickst.</p>
+                  <h6>Spielstände anzeigen:</h6>
+                  Die aktuellen Spielstände und Spielerrollen werden auf dem Bildschirm angezeigt.</p>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Schließen</button>
+                                    <a href="{{ url_for('prisoners_dilemma.index') }}" class="btn btn-primary">Zum Spiel</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+              <a href="{{ url_for('prisoners_dilemma.index') }}" class="btn btn-primary">Spielen</a>
+              
+              </div>
+            </div>
+          </div>
+
+
+    
+    
+        <div class="col">
+          <div class="card">
+              <img src="{{ url_for('static', filename='img/tic-tac-toe.webp') }}" class="card-img-top" alt="Tic-Tac-Toe">
+              <div class="card-body">
+                <h5 class="card-title">Tic-Tac-Toe<sup>2</sup></h5>
+                <p class="card-text">Eine dynamische Variante des klassischen Tic-Tac-Toe, bei der Steine bewegt werden können.</p>
+
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#instruction_tictactoe">
+                      Spielanleitung
+                  </button>
+
+                  <!-- Modal -->
+                  <div class="modal fade" id="instruction_tictactoe" tabindex="-1" aria-labelledby="instruction_tictactoe" aria-hidden="true">
+                      <div class="modal-dialog">
+                          <div class="modal-content">
+                              <div class="modal-header">
+                                  <h5 class="modal-title" id="instruction_tictactoe">Spielanleitung Tic-Tac-Toe<sup>2</sup></h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                  <h6>Spielprinzip:</h6>
+                                  <p>Eigentlich genau wie Tic-Tac-Toe, aaaaaaber jeder Spieler hat nur drei Steine zur Verfügung, die nach dem Platzieren auch bewegt werden können.</p>
+
+                                  <h6>Spielablauf:</h6>
+                                  <ol>
+                                      <li><strong>Platzierungsphase:</strong>
+                                          <ul>
+                                              <li>Spieler X beginnt und setzt einen Stein</li>
+                                              <li>Spieler O ist als nächstes dran</li>
+                                              <li>Dies geht so weiter, bis beide Spieler alle ihre drei Steine gesetzt haben</li>
+                                          </ul>
+                                      </li>
+                                      <li><strong>Bewegungsphase:</strong>
+                                          <ul>
+                                              <li>Nachdem alle Steine platziert sind, bewegen die Spieler abwechselnd ihre Steine</li>
+                                              <li>Ein Zug besteht aus zwei Schritten:
+                                                  <ol>
+                                                      <li>Einen eigenen Stein auswählen</li>
+                                                      <li>Den Stein auf ein freies Feld bewegen</li>
+                                                  </ol>
+                                              </li>
+                                          </ul>
+                                      </li>
+                                  </ol>
+
+                                  <h6>Ziel des Spiels:</h6>
+                                  <p>Drei eigene Steine in einer Reihe platzieren (horizontal, vertikal oder diagonal).</p>
+
+                                  <h6>Spielabluaf:</h6>
+                                  <ol>
+                                      <li><strong>Raum erstellen:</strong><br>
+                                          Klicke auf "Spiel erstellen" und gib deinen Namen ein (zB Kurti Blahovetz)</li>
+                                      <li><strong>Raum beitreten:</strong><br>
+                                          Der zweite Spieler gibt den Raumcode ein und seinen Namen (zB Edmund Sackbauer)</li>
+                                  </ol>
+
+                                  <h6>Viel Spaß!</h6>
+                              </div>
+                              <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Schließen</button>
+                                  <a href="{{ url_for('tic_tac_toe.index') }}" class="btn btn-primary">Zum Spiel</a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+                <a href="{{ url_for('tic_tac_toe.index') }}" class="btn btn-primary">Spielen</a>
+              </div>
+          </div>
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}

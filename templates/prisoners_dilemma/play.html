@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block title %}Triff deine Wahl{% endblock %}
+
+{% block header %}
+<h1 class="text-center">Runde {{ game.current_round + 1 }}</h1>
+{% endblock %}
+
+{% block content %}
+<div class="text-center">
+    <h2>Raumcode: {{ room_code }}</h2>
+    
+    <div class="scores">
+        <p class="bg-dark p-3 rounded text-white" style="font-size: 1.5em;">
+            Aktuelle Gefängnisstrafe: {{ game.scores[game.players.index(player_id)] }} Jahre
+            <br>
+            <small style="font-size: 0.8em;">Maximale Strafe: {{ game.max_years }} Jahre</small>
+        </p>
+    </div>
+
+    <div class="player-section mt-4">
+        <h4>Du bist {{ player_role }}</h4>
+        <form action="{{ url_for('prisoners_dilemma.make_choice') }}" method="post">
+            <button type="submit" name="choice" value="stay_silent" class="btn btn-primary">Ich sag nix du Bullenschwein!</button>
+            <button type="submit" name="choice" value="betray" class="btn btn-danger">Er/Sie wars. Doppelschwör!</button>
+        </form>
+    </div>
+</div>
+{% endblock %} 
+
+{% block scripts %}
+<script>
+    $(document).ready(function() {
+        $.post("{{ url_for('prisoners_dilemma.reset_round', room_code=room_code) }}");
+    });
+</script>
+{% endblock %}

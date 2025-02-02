@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% block title %}Upload PDF{% endblock %}
+{% block content %}
+
+<h2>PDF hochladen</h2>
+
+<div class="mb-3">
+    Hier den Sciex Intrument Tuning Report hochladen
+</div>
+
+<form id="upload-form" enctype="multipart/form-data">
+
+    <div class="mb-3">
+        <input class="form-control form-control-lg" id="formFileLg" type="file" name="file" accept=".pdf" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Datei laden und verarbeiten</button>
+</form>
+
+<div id="result-table" class="mt-4"></div>
+
+<script>
+document.getElementById('upload-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    var formData = new FormData(this);
+
+    fetch('{{ url_for("mass_extract.upload_file") }}', {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.error) {
+            alert(data.error);
+        } else {
+            document.getElementById('result-table').innerHTML = data.table_html;
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert('An error occurred while processing the file.');
+    });
+});
+</script>
+
+{% endblock %}
