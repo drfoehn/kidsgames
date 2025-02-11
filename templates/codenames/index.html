@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% block title %}CadaWars{% endblock %}
+{% block content %}
+<div class="container mt-5">
+    <div class="row justify-content-center text-center mb-5">
+        <div class="col-md-8">
+            <h1 class="mb-4">Willkommen bei CadaWars</h1>
+        </div>
+    </div>
+
+    <div class="row justify-content-center mb-5">
+        <div class="col-md-6 text-center">
+            <div class="create-game">
+                <h2 class="mb-4">Neue Mission starten</h2>
+                <form action="{{ url_for('codenames.create_room') }}" method="post" class="mb-4">
+                    <div class="mb-4">
+                        <label for="player_name" class="form-label">Dein Name:</label>
+                        <input type="text" id="player_name" name="player_name" class="form-control" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="team" class="form-label">Orden:</label>
+                        <select id="team" name="team" class="form-select" required>
+                            <option value="red">Rot</option>
+                            <option value="blue">Blau</option>
+                        </select>
+                    </div>
+                    <button class="btn btn-primary btn-lg" type="submit">Als Jedi-Meister starten</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="join-game">
+                <h2 class="text-center mb-4">Mission beitreten</h2>
+                <form action="{{ url_for('codenames.join_room') }}" method="post">
+                    <div class="mb-4">
+                        <label for="room_id" class="form-label">Missions-Code:</label>
+                        <input type="text" id="room_id" name="room_id" class="form-control" required>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <label for="player_name" class="form-label">Dein Name:</label>
+                        <input type="text" id="player_name" name="player_name" class="form-control" required>
+                    </div>
+
+                    <div class="row mb-4">
+                        <div class="col-md-6">
+                            <label for="team" class="form-label">Orden:</label>
+                            <select id="team" name="team" class="form-select" required>
+                                <option value="red">Rot</option>
+                                <option value="blue">Blau</option>
+                            </select>
+                        </div>
+                    
+                        <div class="col-md-6">
+                            <label for="role" class="form-label">Rolle:</label>
+                            <select id="role" name="role" class="form-select" required>
+                                <option value="jedi">Jedi-Meister</option>
+                                <option value="padawan">Padawan</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary btn-lg">Mission beitreten</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %} 

@@ -141,7 +141,7 @@
           <div class="card">
               <img src="{{ url_for('static', filename='img/cadanames.webp') }}" class="card-img-top" alt="Cadanames">
               <div class="card-body">
-                <h5 class="card-title">Cadanames</h5>
+                <h5 class="card-title">CadaWars</h5>
                 <p class="card-text">Ein Spiel bei dem du versuchen musst, die Begriffe auf den Tafeln dem Überbegriff, den dir dein Teammitglied vorgibt, richtig zuzuordnen.</p>
                 
                                     <!-- Button trigger modal -->
@@ -154,11 +154,60 @@
                         <div class="modal-dialog">
                           <div class="modal-content">
                             <div class="modal-header">
-                              <h5 class="modal-title" id="instruction_cadanames">Spielanleitung Cadanames</h5>
+                              <h5 class="modal-title" id="instruction_cadanames">Spielanleitung CadaWars</h5>
                               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                              ...
+                              <h3>Übersicht</h3>
+                <p>CadaWars ist eine Star Wars-Version des beliebten Wortspiels Codenames. Zwei Teams (Roter und Blauer Orden) treten gegeneinander an, um ihre geheimen Artefakte zu finden.</p>
+                
+                <h4 class="mt-4">Teams</h4>
+                <ul>
+                    <li><strong>Jedi-Meister:</strong> Kennt die Identität aller Artefakte</li>
+                    <li><strong>Padawane:</strong> Müssen die richtigen Artefakte basierend auf den Hinweisen ihres Jedi-Meisters finden</li>
+                </ul>
+                
+                <h4 class="mt-4">Spielablauf</h4>
+                <h5>1. Spielvorbereitung</h5>
+                <ul>
+                    <li>Spieler teilen sich in zwei Teams auf (Roter und Blauer Orden)</li>
+                    <li>Jedes Team wählt einen Jedi-Meister</li>
+                    <li>Die übrigen Spieler werden zu Padawanen</li>
+                    <li>Ein 5x5 Raster mit 25 Wörtern wird erstellt</li>
+                </ul>
+                
+                <h5>2. Spielzug</h5>
+                <ul>
+                    <li>Der Jedi-Meister des aktiven Teams gibt einen Hinweis:
+                        <ul>
+                            <li>Ein Wort, das mit einem oder mehreren Artefakten in Verbindung steht</li>
+                            <li>Eine Zahl, die angibt, wie viele Artefakte damit gemeint sind</li>
+                        </ul>
+                    </li>
+                    <li>Die Padawane beraten sich und wählen Wörter aus</li>
+                    <li>Der Zug endet wenn:
+                        <ul>
+                            <li>Ein falsches Artefakt gewählt wurde</li>
+                            <li>Die Padawane freiwillig aufhören</li>
+                            <li>Die angegebene Anzahl erreicht ist</li>
+                            <li>Darth Vader (schwarze Karte) aufgedeckt wird</li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                <h5>3. Spielende</h5>
+                <ul>
+                    <li>Ein Team gewinnt, wenn alle ihre Artefakte gefunden wurden</li>
+                    <li>Das Spiel endet sofort, wenn Darth Vader (schwarze Karte) aufgedeckt wird (das andere Team gewinnt)</li>
+                </ul>
+                
+                <h4 class="mt-4">Hinweise</h4>
+                <ul class="mb-0">
+                    <li>Nur Padawane dürfen Karten aufdecken</li>
+                    <li>Das Spiel wird im Querformat auf dem Smartphone gespielt</li>
+                    <li>Jedi-Meister sehen die Farben aller Karten</li>
+                    <li>Padawane sehen nur die aufgedeckten Karten</li>
+                </ul>
                             </div>
                             <div class="modal-footer">
                               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Schließen</button>

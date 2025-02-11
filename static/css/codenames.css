@@ -1,0 +1,546 @@
+.game-container {
+    max-width: 100%;
+    margin: 0;
+    padding: 10px;
+    min-height: 100vh;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5px;
+    margin: 10px auto;
+    width: 100%;
+}
+
+/* Landscape phones and tablets */
+@media (max-width: 991px) and (orientation: landscape) {
+    .game-board {
+        /* 4 cards in landscape mode */
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .word-card {
+        /* Kleinere Karten im Landscape-Modus */
+        min-height: 60px;
+        padding: 15px;
+        font-size: 0.9em;
+    }
+}
+
+/* Portrait phones */
+@media (max-width: 767px) and (orientation: portrait) {
+    .game-board {
+        /* 3 cards in portrait mode */
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .word-card {
+        /* Noch kleinere Karten im Portrait-Modus */
+        min-height: 50px;
+        padding: 10px;
+        font-size: 0.8em;
+    }
+    
+    /* Zeige Landscape-Alert nur im Portrait-Modus */
+    .landscape-alert {
+        display: block !important;
+        margin-bottom: 1rem;
+    }
+}
+
+.word-card {
+    aspect-ratio: 16/10;
+    background: #f8f9fa;
+    border: 2px solid #dee2e6;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    word-break: break-word;
+}
+
+.word-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.word-card.revealed[data-card="red"] {
+    background: #dc3545;
+    color: white;
+    border-color: #dc3545;
+}
+
+.word-card.revealed[data-card="blue"] {
+    background: #0d6efd;
+    color: white;
+    border-color: #0d6efd;
+}
+
+.word-card.revealed[data-card="assassin"] {
+    background: #212529;
+    color: white;
+    border-color: #212529;
+}
+
+.word-card.revealed[data-card="neutral"] {
+    background: #adb5bd;
+    color: white;
+    border-color: #adb5bd;
+}
+
+/* Für Jedi-Meister */
+.jedi-master .word-card[data-card="red"] {
+    border-color: #dc3545;
+    background-color: rgba(220, 53, 69, 0.1);
+}
+
+.jedi-master .word-card[data-card="blue"] {
+    border-color: #0d6efd;
+    background-color: rgba(13, 110, 253, 0.1);
+}
+
+.jedi-master .word-card[data-card="assassin"] {
+    border-color: #212529;
+    background-color: rgba(33, 37, 41, 0.1);
+}
+
+.jedi-master .word-card[data-card="neutral"] {
+    border-color: #adb5bd;
+    background-color: rgba(173, 181, 189, 0.1);
+}
+
+.team-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.hint-form {
+    margin: 20px 0;
+}
+
+.red-team {
+    color: #d32f2f;
+}
+
+.blue-team {
+    color: #1976d2;
+}
+
+.agent-card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: all 0.3s;
+    transform-origin: center;
+    animation: reveal 0.5s ease-out;
+}
+
+@keyframes reveal {
+    from {
+        transform: scale(1.2);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.agent-card.red {
+    background-color: #ffcdd2;
+    border: 2px solid #d32f2f;
+}
+
+.agent-card.blue {
+    background-color: #bbdefb;
+    border: 2px solid #1976d2;
+}
+
+.agent-card.neutral {
+    background-color: #f5f5f5;
+    border: 2px solid #9e9e9e;
+}
+
+.agent-card.assassin {
+    background-color: #212121;
+    border: 2px solid #000;
+}
+
+.game-over .word-card {
+    pointer-events: none;
+    opacity: 0.7;
+}
+
+.game-over-message {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 20px 40px;
+    border-radius: 10px;
+    font-size: 24px;
+    z-index: 1000;
+    animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -60%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
+/* Score display */
+.score-display {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.red-count {
+    color: #d32f2f;
+}
+
+.blue-count {
+    color: #1976d2;
+}
+
+.hints-container {
+    max-height: 200px;
+    overflow-y: auto;
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.hint-display {
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    animation: fadeIn 0.3s ease-out;
+}
+
+.hint-display.red {
+    background-color: rgba(255, 0, 0, 0.1);
+    border-left: 3px solid #d32f2f;
+}
+
+.hint-display.blue {
+    background-color: rgba(0, 0, 255, 0.1);
+    border-left: 3px solid #1976d2;
+}
+
+.hint-form {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+    align-items: center;
+}
+
+.hint-form input[type="text"] {
+    flex: 2;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.hint-form input[type="number"] {
+    width: 80px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.hint-form button {
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.hint-form button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+.hint-form button:hover:not(:disabled) {
+    background-color: #45a049;
+}
+
+.end-turn-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.end-turn-button:hover {
+    background-color: #45a049;
+}
+
+.end-turn-button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+.card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    transition: all 0.3s ease;
+}
+
+/* Revealed cards */
+.word-card.revealed .card-overlay.red {
+    background-color: #ffcdd2;
+    border: 2px solid #d32f2f;
+}
+
+.word-card.revealed .card-overlay.blue {
+    background-color: #bbdefb;
+    border: 2px solid #1976d2;
+}
+
+.word-card.revealed .card-overlay.neutral {
+    background-color: #f5f5f5;
+    border: 2px solid #9e9e9e;
+}
+
+.word-card.revealed .card-overlay.assassin {
+    background-color: #212121;
+    border: 2px solid #000;
+}
+
+.word-card.revealed[data-card="red"] {
+    color: #d32f2f;
+    font-weight: bold;
+}
+
+.word-card.revealed[data-card="blue"] {
+    color: #1976d2;
+    font-weight: bold;
+}
+
+.word-card.revealed[data-card="neutral"] {
+    color: #757575;
+    font-weight: bold;
+}
+
+.word-card.revealed[data-card="assassin"] {
+    color: #fff;
+    font-weight: bold;
+}
+
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 15px 25px;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+    z-index: 1000;
+    animation: slideIn 0.5s ease-out;
+    transition: opacity 0.5s;
+}
+
+.notification.error {
+    background-color: #dc3545;
+}
+
+.notification.warning {
+    background-color: #ffc107;
+    color: #000;
+}
+
+.notification.info {
+    background-color: #0dcaf0;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Landscape Alert Styling */
+.landscape-alert {
+    display: none;
+    text-align: center;
+    border-radius: 8px;
+    animation: fadeIn 0.5s ease-out;
+}
+
+.landscape-alert .bi {
+    margin-right: 8px;
+}
+
+/* Optional: Animation für den Alert */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+} 
+
+/* Padawane sehen keine Farben für nicht aufgedeckte Karten */
+.padawan .word-card:not(.revealed) {
+    background: #f8f9fa;
+    border-color: #dee2e6;
+} 
+
+/* Portrait-Warnung */
+.portrait-warning {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.9);
+    z-index: 9999;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Media Queries */
+@media (orientation: portrait) {
+    .portrait-warning {
+        display: flex;
+    }
+}
+
+@media (orientation: landscape) {
+    .portrait-warning {
+        display: none;
+    }
+    
+    /* Anpassungen für kleine Bildschirme im Landscape-Modus */
+    @media (max-height: 500px) {
+        .word-card {
+            font-size: 0.8rem;
+            padding: 3px;
+        }
+        
+        .container {
+            padding: 5px;
+        }
+        
+        .row {
+            margin: 5px 0;
+        }
+        
+        h5, .h5 {
+            font-size: 1rem;
+            margin: 0;
+        }
+        
+        .btn {
+            padding: 0.25rem 0.5rem;
+            font-size: 0.875rem;
+        }
+        
+        .score-display {
+            font-size: 0.9rem;
+        }
+    }
+}
+
+.player-badge {
+    border: 1px solid rgba(0,0,0,0.1);
+    font-size: 0.9em;
+}
+
+/* Spieler-Team Farben */
+.player-badge.red-team {
+    border: 1px solid var(--bs-danger);
+    background-color: var(--bs-danger-bg-subtle);
+}
+
+.player-badge.blue-team {
+    border: 1px solid var(--bs-primary);
+    background-color: var(--bs-primary-bg-subtle);
+}
+
+/* Jedi-Meister Kartenfarben - höhere Spezifität */
+.game-container.jedi-master .word-card[data-card="red"]:not(.revealed) {
+    border: 2px solid #dc3545 !important;
+    background-color: #f8d7da !important;
+}
+
+.game-container.jedi-master .word-card[data-card="blue"]:not(.revealed) {
+    border: 2px solid #0d6efd !important;
+    background-color: #cfe2ff !important;
+}
+
+.game-container.jedi-master .word-card[data-card="neutral"]:not(.revealed) {
+    border: 2px solid #6c757d !important;
+    background-color: #e9ecef !important;
+}
+
+.game-container.jedi-master .word-card[data-card="assassin"]:not(.revealed) {
+    border: 2px solid #212529 !important;
+    background-color: #dee2e6 !important;
+}
+
+/* Aufgedeckte Karten für alle Spieler */
+.word-card.revealed[data-card="red"] {
+    border: 2px solid var(--bs-danger) !important;
+    background-color: var(--bs-danger-bg-subtle) !important;
+}
+
+.word-card.revealed[data-card="blue"] {
+    border: 2px solid var(--bs-primary) !important;
+    background-color: var(--bs-primary-bg-subtle) !important;
+}
+
+.word-card.revealed[data-card="neutral"] {
+    border: 2px solid var(--bs-secondary) !important;
+    background-color: var(--bs-secondary-bg-subtle) !important;
+}
+
+.word-card.revealed[data-card="assassin"] {
+    border: 2px solid var(--bs-dark) !important;
+    background-color: var(--bs-dark-bg-subtle) !important;
+}

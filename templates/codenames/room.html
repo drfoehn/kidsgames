@@ -1,0 +1,172 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- Portrait-Warnung -->
+<div class="portrait-warning">
+    <div>
+        <i class="bi bi-phone-landscape display-1"></i>
+        <h2 class="mt-3">Aaaalder drehst du dein Gerät!</h2>
+        <p>Dieses Spiel wird im Querformat gespielt</p>
+    </div>
+</div>
+
+
+<div class="game-container {% if player %}{% if player.role == 'jedi' %}jedi-master{% else %}padawan{% endif %}{% endif %}"
+     data-room-id="{{ room.id }}"
+     data-player-role="{{ player.role if player else '' }}"
+     data-player-team="{{ player.team if player else '' }}"
+     data-player-id="{{ player.id if player else '' }}">
+    
+    <div class="container-fluid">
+        <!-- Top Row: Room Info & Current Team -->
+        <div class="row align-items-center g-2 mb-2">
+            <div class="col-auto">
+                <h5 class="text-muted mb-0">Raum: {{ room.id }}</h5>
+            </div>
+            <div class="col">
+                <div class="current-team">
+                    <span class="badge {% if room.game_state.current_team == 'red' %}bg-danger{% else %}bg-primary{% endif %}">
+                        {{ 'Roter' if room.game_state.current_team == 'red' else 'Blauer' }} Orden ist dran
+                    </span>
+                </div>
+            </div>
+            <div class="col-auto">
+                <a href="{{ url_for('codenames.index') }}" class="btn btn-outline-primary btn-sm">
+                    <i class="bi bi-plus-circle"></i> Neu
+                </a>
+            </div>
+        </div>
+
+        <!-- Player Info & Score -->
+        <div class="row g-2 mb-2">
+            <div class="col-12 col-sm-6">
+                <!-- Eigene Player-Info in separatem Container -->
+                <div class="current-player-info">
+                    {% if player %}
+                    <div class="player-info">
+                        <small>
+                            Du bist: 
+                            <span class="{% if player.team == 'red' %}text-danger{% else %}text-primary{% endif %} fw-bold">
+                                {{ player.name }}
+                            </span>
+                            <span class="badge {% if player.role == 'jedi' %}bg-dark{% else %}bg-secondary{% endif %}">
+                                {{ 'Jedi-Meister' if player.role == 'jedi' else 'Padawan' }}
+                            </span>
+                            vom 
+                            <span class="{% if player.team == 'red' %}text-danger{% else %}text-primary{% endif %}">
+                                {{ 'Roten' if player.team == 'red' else 'Blauen' }} Orden
+                            </span>
+                        </small>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+            <div class="col-12 col-sm-6">
+                <div class="score-display d-flex justify-content-end gap-3">
+                    <div class="red-count">
+                        <i class="bi bi-person-fill text-danger"></i>
+                        <small>Rot: {{ room.game_state.card_counts.red - (room.game_state.revealed|selectattr('card', 'equalto', 'red')|list|length) }}</small>
+                    </div>
+                    <div class="blue-count">
+                        <i class="bi bi-person-fill text-primary"></i>
+                        <small>Blau: {{ room.game_state.card_counts.blue - (room.game_state.revealed|selectattr('card', 'equalto', 'blue')|list|length) }}</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Nach dem Score Display und vor dem Game Board -->
+        <div class="row mb-3">
+            <div class="col">
+                <div class="player-list">
+                    <h5 class="mb-2">Spieler:</h5>
+                    <div class="d-flex flex-wrap gap-2">
+                        {% for p in room.players %}
+                            <div class="player-badge p-2 rounded {% if p.team == 'red' %}red-team{% else %}blue-team{% endif %}">
+                                <span class="fw-bold">{{ p.name }}</span>
+                                <span class="badge {% if p.role == 'jedi' %}bg-dark{% else %}bg-secondary{% endif %}">
+                                    {{ 'Jedi-Meister' if p.role == 'jedi' else 'Padawan' }}
+                                </span>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Game Board -->
+        <div class="row mb-2">
+            <div class="col">
+                <div class="game-board">
+                    {% for word in room.game_state.words %}
+                        {% set is_revealed = false %}
+                        {% set card_type = room.game_state.cards[loop.index0] %}
+                        
+                        {% if room.game_state.revealed|selectattr('index', 'equalto', loop.index0)|list %}
+                            {% set is_revealed = true %}
+                        {% endif %}
+                        
+                        <div class="word-card {% if is_revealed %}revealed{% endif %}"
+                             data-index="{{ loop.index0 }}"
+                             {% if is_revealed or (player and player.role == 'jedi') %}
+                             data-card="{{ card_type }}"
+                             {% endif %}>
+                            {{ word }}
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+
+        <!-- End Turn Button -->
+        {% if player and player.role == 'padawan' and player.team == room.game_state.current_team %}
+        <div class="row">
+            <div class="col text-center">
+                <button type="button" class="btn btn-outline-secondary" onclick="endTurn('{{ room.id }}')">
+                    Zug beenden
+                </button>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+</div>
+
+<!-- Game Over Modal -->
+<div class="modal fade" id="gameOverModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Mission beendet!</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p id="winnerMessage" class="h4 text-center"></p>
+            </div>
+            <div class="modal-footer">
+                <a href="{{ url_for('codenames.index') }}" class="btn btn-primary">Neue Mission</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    const roomId = "{{ room.id }}";
+    const currentPlayer = {
+        id: "{{ player.id if player else '' }}",
+        team: "{{ player.team if player else '' }}",
+        role: "{{ player.role if player else '' }}"
+    };
+    const playerRole = currentPlayer.role;
+    const playerTeam = currentPlayer.team;
+    const apiUrls = {
+        makeGuess: "{{ url_for('codenames.make_guess') }}",
+        endTurn: "{{ url_for('codenames.end_turn') }}",
+        revealCard: "{{ url_for('codenames.reveal_card', room_id=room.id) }}",
+        submitHint: "{{ url_for('codenames.submit_hint', room_id=room.id) }}"
+    };
+</script>
+<script src="{{ url_for('static', filename='js/codenames.js') }}"></script>
+
+
+
+{% endblock %} 
