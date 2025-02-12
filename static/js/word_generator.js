@@ -3,7 +3,7 @@ $(document).ready(function (){
 })
 
 let wordsArray;
-fetch('https://picdamuro.drevil2.uber.space/data/words.json')
+fetch('/static/data/words.json')
   .then(res => res.json())
   .then(data => wordsArray = data)
   .then(() => console.log(wordsArray))
